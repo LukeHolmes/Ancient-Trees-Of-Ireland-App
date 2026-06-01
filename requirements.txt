@@ -1,6 +1,0 @@
-dash
-Flask
-pandas
-plotly
-gunicorn
-
