@@ -9,7 +9,7 @@ interface TreeListProps {
 }
 
 export default function TreeList({ trees, selectedId, onSelect }: TreeListProps) {
-  const displayed = trees.slice(0, 50)
+  const displayed = trees.slice(0, 80)
 
   return (
     <div className="flex flex-col flex-1 min-h-0">
@@ -20,20 +20,19 @@ export default function TreeList({ trees, selectedId, onSelect }: TreeListProps)
           background: 'rgba(15, 35, 24, 0.4)',
         }}
       >
-        <span className="text-[10px] uppercase tracking-widest text-parchment/40">
-          Results
-        </span>
-        <span className="text-[10px] text-parchment/40">
-          {trees.length > 50 ? `Showing 50 of ${trees.length}` : `${trees.length} trees`}
+        <span className="text-xs uppercase tracking-widest text-parchment/45">Results</span>
+        <span className="text-xs text-parchment/45">
+          {trees.length > displayed.length
+            ? `Showing ${displayed.length} of ${trees.length}`
+            : `${trees.length} trees`}
         </span>
       </div>
 
       <div className="flex-1 overflow-y-auto">
         {displayed.length === 0 ? (
           <div className="flex flex-col items-center justify-center h-full py-12 text-center px-6">
-            <div className="text-4xl mb-3 opacity-40">🌲</div>
-            <p className="text-sm text-parchment/40">No trees match your filters.</p>
-            <p className="text-xs text-parchment/30 mt-1">Try clearing some filters.</p>
+            <p className="text-base text-parchment/55">No trees match your filters.</p>
+            <p className="text-sm text-parchment/40 mt-1">Try clearing one or more filters.</p>
           </div>
         ) : (
           displayed.map((tree) => (
@@ -52,28 +51,28 @@ export default function TreeList({ trees, selectedId, onSelect }: TreeListProps)
                     ? '3px solid #C4943A'
                     : '3px solid transparent',
               }}
-              onMouseEnter={(e) => {
+              onMouseEnter={(event) => {
                 if (selectedId !== tree.id) {
-                  e.currentTarget.style.background = 'rgba(45, 106, 79, 0.2)'
+                  event.currentTarget.style.background = 'rgba(45, 106, 79, 0.2)'
                 }
               }}
-              onMouseLeave={(e) => {
+              onMouseLeave={(event) => {
                 if (selectedId !== tree.id) {
-                  e.currentTarget.style.background = 'transparent'
+                  event.currentTarget.style.background = 'transparent'
                 }
               }}
             >
               <div className="flex items-start justify-between gap-2">
                 <div className="min-w-0 flex-1">
                   <div
-                    className="font-bold text-sm text-parchment leading-tight truncate"
+                    className="font-bold text-base text-parchment leading-tight truncate"
                     style={{ fontFamily: 'var(--font-playfair)' }}
                   >
                     {tree.commonName || tree.taxonName || 'Unknown Tree'}
                   </div>
                   {tree.siteName && (
                     <div
-                      className="text-xs mt-0.5 truncate"
+                      className="text-sm mt-0.5 truncate"
                       style={{ color: '#C4943A', fontStyle: 'italic' }}
                     >
                       {tree.siteName}
@@ -82,7 +81,7 @@ export default function TreeList({ trees, selectedId, onSelect }: TreeListProps)
                   <div className="flex items-center gap-2 mt-1.5 flex-wrap">
                     {tree.county && (
                       <span
-                        className="text-[10px] px-2 py-0.5 rounded-full"
+                        className="text-xs px-2 py-0.5 rounded-full"
                         style={{
                           background: 'rgba(45, 106, 79, 0.4)',
                           border: '1px solid rgba(74, 124, 89, 0.4)',
@@ -93,15 +92,13 @@ export default function TreeList({ trees, selectedId, onSelect }: TreeListProps)
                       </span>
                     )}
                     {tree.broadType && (
-                      <span className="text-[10px] text-parchment/40 truncate">
-                        {tree.broadType}
-                      </span>
+                      <span className="text-xs text-parchment/50 truncate">{tree.broadType}</span>
                     )}
                   </div>
                 </div>
                 {tree.ageRange && (
                   <div className="flex-shrink-0 text-right">
-                    <span className="text-[10px] text-parchment/40 leading-tight block">
+                    <span className="text-xs text-parchment/50 leading-tight block">
                       {tree.ageRange}
                     </span>
                   </div>

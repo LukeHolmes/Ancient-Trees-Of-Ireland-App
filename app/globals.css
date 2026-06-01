@@ -2,17 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Import Leaflet CSS */
 @import 'leaflet/dist/leaflet.css';
 
 :root {
-  --green-dark: #0F2318;
-  --green-primary: #1C4A2A;
-  --green-mid: #2D6A4F;
-  --green-light: #4A7C59;
-  --amber: #C4943A;
-  --parchment: #F5F0E8;
-  --bark: #3D2B1F;
+  --green-dark: #0f2318;
+  --green-primary: #1c4a2a;
+  --green-mid: #2d6a4f;
+  --green-light: #4a7c59;
+  --amber: #c4943a;
+  --parchment: #f5f0e8;
+  --bark: #3d2b1f;
 }
 
 html,
@@ -27,41 +26,77 @@ body {
   font-family: var(--font-inter), system-ui, sans-serif;
 }
 
-/* Custom scrollbar */
 ::-webkit-scrollbar {
-  width: 4px;
+  width: 6px;
 }
+
 ::-webkit-scrollbar-track {
   background: var(--green-primary);
 }
+
 ::-webkit-scrollbar-thumb {
   background: var(--amber);
-  border-radius: 2px;
+  border-radius: 3px;
 }
 
-/* Leaflet overrides */
 .leaflet-container {
   background: #1a2e20;
 }
+
 .leaflet-popup-content-wrapper {
-  background: #1C4A2A;
-  color: #F5F0E8;
-  border: 1px solid #C4943A;
+  background: #1c4a2a;
+  color: #f5f0e8;
+  border: 1px solid #c4943a;
   border-radius: 8px;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
 }
+
 .leaflet-popup-tip {
-  background: #1C4A2A;
+  background: #1c4a2a;
 }
+
 .leaflet-popup-content {
   margin: 12px 16px;
 }
+
 .leaflet-popup-close-button {
-  color: #C4943A !important;
+  color: #c4943a !important;
   font-size: 18px !important;
   top: 6px !important;
   right: 8px !important;
 }
+
 .leaflet-popup-close-button:hover {
-  color: #F5F0E8 !important;
+  color: #f5f0e8 !important;
+}
+
+.tree-marker-wrapper {
+  background: transparent;
+  border: none;
+}
+
+.tree-marker-dot {
+  display: block;
+  border-radius: 9999px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.55);
+}
+
+.tree-cluster-wrapper {
+  background: transparent;
+  border: none;
+}
+
+.tree-cluster {
+  border-radius: 9999px;
+  border: 2px solid rgba(245, 240, 232, 0.7);
+  background: radial-gradient(circle at 30% 30%, #c4943a, #73511f);
+  color: #f5f0e8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5);
+  font-family: var(--font-inter), system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
 }

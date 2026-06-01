@@ -1,18 +1,18 @@
 'use client'
 
-import { useMemo } from 'react'
-import type { Tree } from '@/types/tree'
+import type { FilterOptions, Filters, TourKey } from '@/types/tree'
 
-export interface Filters {
-  counties: string[]
-  broadTypes: string[]
-  ageRanges: string[]
-  condition: string
+interface TourSummary {
+  key: TourKey
+  label: string
+  description: string
 }
 
 interface FilterPanelProps {
-  trees: Tree[]
   filters: Filters
+  options: FilterOptions
+  tours: TourSummary[]
+  onApplyTour: (tourKey: TourKey) => void
   onChange: (filters: Filters) => void
 }
 
@@ -20,7 +20,7 @@ function Section({ title, children }: { title: string; children: React.ReactNode
   return (
     <div className="mb-4">
       <h3
-        className="text-xs font-semibold uppercase tracking-widest mb-2"
+        className="text-[11px] font-semibold uppercase tracking-[0.14em] mb-2"
         style={{ color: '#C4943A' }}
       >
         {title}
@@ -37,56 +37,62 @@ function MultiCheckList({
 }: {
   options: string[]
   selected: string[]
-  onToggle: (val: string) => void
+  onToggle: (value: string) => void
 }) {
+  if (options.length === 0) {
+    return (
+      <div
+        className="rounded px-3 py-2 text-xs"
+        style={{
+          background: 'rgba(15, 35, 24, 0.6)',
+          border: '1px solid rgba(74, 124, 89, 0.3)',
+          color: 'rgba(245, 240, 232, 0.55)',
+        }}
+      >
+        No options with current filters.
+      </div>
+    )
+  }
+
   return (
     <div
       className="overflow-y-auto rounded"
       style={{
-        maxHeight: 160,
+        maxHeight: 150,
         background: 'rgba(15, 35, 24, 0.6)',
         border: '1px solid rgba(74, 124, 89, 0.3)',
       }}
     >
-      {options.map((opt) => (
+      {options.map((option) => (
         <label
-          key={opt}
+          key={option}
           className="flex items-center gap-2 px-3 py-1.5 cursor-pointer hover:bg-green-primary/40 transition-colors"
         >
           <input
             type="checkbox"
-            checked={selected.includes(opt)}
-            onChange={() => onToggle(opt)}
-            className="accent-amber w-3 h-3 flex-shrink-0"
+            checked={selected.includes(option)}
+            onChange={() => onToggle(option)}
+            className="accent-amber w-4 h-4 flex-shrink-0"
           />
-          <span className="text-xs text-parchment/80 truncate">{opt}</span>
+          <span className="text-sm text-parchment/85 truncate">{option}</span>
         </label>
       ))}
     </div>
   )
 }
 
-export default function FilterPanel({ trees, filters, onChange }: FilterPanelProps) {
-  const allCounties = useMemo(
-    () => [...new Set(trees.map((t) => t.county).filter(Boolean))].sort(),
-    [trees]
-  )
-  const allBroadTypes = useMemo(
-    () => [...new Set(trees.map((t) => t.broadType).filter(Boolean))].sort(),
-    [trees]
-  )
-  const allAgeRanges = useMemo(
-    () => [...new Set(trees.map((t) => t.ageRange).filter(Boolean))].sort(),
-    [trees]
-  )
-  const allConditions = useMemo(
-    () => ['', ...[...new Set(trees.map((t) => t.condition).filter(Boolean))].sort()],
-    [trees]
-  )
-
-  const toggle = (key: 'counties' | 'broadTypes' | 'ageRanges', val: string) => {
+export default function FilterPanel({
+  filters,
+  options,
+  tours,
+  onApplyTour,
+  onChange,
+}: FilterPanelProps) {
+  const toggle = (key: 'counties' | 'broadTypes' | 'ageRanges', value: string) => {
     const current = filters[key]
-    const next = current.includes(val) ? current.filter((x) => x !== val) : [...current, val]
+    const next = current.includes(value)
+      ? current.filter((entry) => entry !== value)
+      : [...current, value]
     onChange({ ...filters, [key]: next })
   }
 
@@ -105,12 +111,12 @@ export default function FilterPanel({ trees, filters, onChange }: FilterPanelPro
       className="px-4 py-4 flex-shrink-0 overflow-y-auto"
       style={{
         borderBottom: '1px solid rgba(196, 148, 58, 0.2)',
-        maxHeight: 340,
+        maxHeight: 430,
       }}
     >
       <div className="flex items-center justify-between mb-3">
         <span
-          className="text-xs font-semibold uppercase tracking-widest"
+          className="text-[11px] font-semibold uppercase tracking-[0.14em]"
           style={{ color: '#C4943A' }}
         >
           Filters
@@ -118,7 +124,7 @@ export default function FilterPanel({ trees, filters, onChange }: FilterPanelPro
         {hasFilters && (
           <button
             onClick={clearAll}
-            className="text-[10px] px-2 py-1 rounded transition-colors"
+            className="text-xs px-2 py-1 rounded transition-colors"
             style={{
               color: '#C4943A',
               border: '1px solid rgba(196, 148, 58, 0.4)',
@@ -130,44 +136,66 @@ export default function FilterPanel({ trees, filters, onChange }: FilterPanelPro
         )}
       </div>
 
+      <Section title="Remarkable Tours">
+        <div className="grid gap-2">
+          {tours.map((tour) => (
+            <button
+              key={tour.key}
+              onClick={() => onApplyTour(tour.key)}
+              className="text-left px-3 py-2 rounded transition-colors"
+              style={{
+                border: '1px solid rgba(196, 148, 58, 0.35)',
+                background: 'rgba(196, 148, 58, 0.08)',
+              }}
+            >
+              <div className="text-sm font-semibold text-parchment">{tour.label}</div>
+              <div className="text-xs text-parchment/65 mt-0.5">{tour.description}</div>
+            </button>
+          ))}
+        </div>
+      </Section>
+
       <Section title="County">
         <MultiCheckList
-          options={allCounties}
+          options={options.counties}
           selected={filters.counties}
-          onToggle={(v) => toggle('counties', v)}
+          onToggle={(value) => toggle('counties', value)}
         />
       </Section>
 
       <Section title="Tree Type">
         <MultiCheckList
-          options={allBroadTypes}
+          options={options.broadTypes}
           selected={filters.broadTypes}
-          onToggle={(v) => toggle('broadTypes', v)}
+          onToggle={(value) => toggle('broadTypes', value)}
         />
       </Section>
 
       <Section title="Age Range">
         <MultiCheckList
-          options={allAgeRanges}
+          options={options.ageRanges}
           selected={filters.ageRanges}
-          onToggle={(v) => toggle('ageRanges', v)}
+          onToggle={(value) => toggle('ageRanges', value)}
         />
       </Section>
 
       <Section title="Condition">
         <select
           value={filters.condition}
-          onChange={(e) => onChange({ ...filters, condition: e.target.value })}
-          className="w-full rounded px-3 py-2 text-xs outline-none"
+          onChange={(event) => onChange({ ...filters, condition: event.target.value })}
+          className="w-full rounded px-3 py-2 text-sm outline-none"
           style={{
             background: 'rgba(15, 35, 24, 0.6)',
             border: '1px solid rgba(74, 124, 89, 0.3)',
             color: '#F5F0E8',
           }}
         >
-          {allConditions.map((c) => (
-            <option key={c} value={c} style={{ background: '#1C4A2A' }}>
-              {c === '' ? 'All conditions' : c}
+          <option value="" style={{ background: '#1C4A2A' }}>
+            All conditions
+          </option>
+          {options.conditions.map((condition) => (
+            <option key={condition} value={condition} style={{ background: '#1C4A2A' }}>
+              {condition}
             </option>
           ))}
         </select>
