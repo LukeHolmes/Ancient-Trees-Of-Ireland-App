@@ -1,25 +1,64 @@
-# Ancient-Trees-Of-Ireland-App
-Ancient Trees of Ireland – Interactive Data Visualization
-This project provides an interactive map visualization of Ireland's ancient trees, showcasing different tree species, their locations, characteristics, and heritage status. Built using Plotly Dash and deployed with Streamlit, the app allows users to filter trees by species, age range, and county, offering an engaging way to explore Ireland's botanical heritage.
+# Ancient Trees of Ireland (Next.js)
 
-Key Features:
-Interactive Map: Visualize ancient trees on a map of Ireland with easy zoom and pan functionality.
-Filtering Options:
-By Tree Species (Maples, Oaks, etc.)
-By Common Name (European Silver Fir, Horse Chestnut, etc.)
-By Age Range (Tree age categories like 100-150 years, 200-250 years, etc.)
-By County (Filter trees based on their location across Ireland's 26 counties)
-Detailed Information: Hover over each tree marker to get details such as:
-Common Name
-Scientific Name
-Tree Type (e.g., Maple, Oak)
-Age Range
-Condition (Standing alive, Fallen, etc.)
-Site Name and County
-Responsive Design: Works across different screen sizes and devices, ensuring a seamless experience on desktops, tablets, and smartphones.
-Technologies Used:
-Plotly Dash: Framework for building the interactive map and filters.
-Streamlit: Used for easy app deployment with minimal setup.
-Pandas: Data manipulation and preprocessing.
-Plotly Express: For creating the scatter map with clustered markers and hover information.
-Mapbox: Used for rendering the map tiles (Carto-Positron style).
+Modernized web app for exploring heritage trees across Ireland using a Leaflet map, rich filtering, and a responsive sidebar.
+
+## Stack
+
+- Next.js (App Router)
+- TypeScript
+- React + React Leaflet
+- Tailwind CSS
+
+## Quick Start
+
+1. Install dependencies:
+
+```bash
+npm install
+```
+
+2. Start dev server:
+
+```bash
+npm run dev
+```
+
+3. Open:
+
+```text
+http://localhost:3000
+```
+
+## Production
+
+```bash
+npm run build
+npm run start
+```
+
+## Lint
+
+```bash
+npm run lint
+```
+
+## Data
+
+The app reads `public/data/trees.json`.
+
+If you have a source CSV (default expected name: `HeritageTreesOfIreland_corrected.csv` in project root), regenerate JSON with:
+
+```bash
+npm run data:build
+```
+
+Or pass a custom CSV path:
+
+```bash
+python scripts/convert_csv_to_json.py C:\path\to\file.csv
+```
+
+## Notes
+
+- If your ZIP/package does not include the source CSV, the app still runs using the committed `public/data/trees.json`.
+- Filters currently include county, tree type, common name, age range, and condition.
