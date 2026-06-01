@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "data:build": "python scripts/convert_csv_to_json.py"
+    "data:build": "python scripts/convert_csv_to_json.py",
+    "data:repair": "node scripts/repair_tree_coordinates.mjs"
   },
   "dependencies": {
     "next": "14.2.35",
