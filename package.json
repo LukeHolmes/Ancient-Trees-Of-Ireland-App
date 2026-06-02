@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "data:build": "python scripts/convert_csv_to_json.py",
+    "data:build": "python3 scripts/convert_csv_to_json.py",
     "data:audit": "node scripts/audit_tree_coordinates.mjs",
     "data:repair": "node scripts/repair_tree_coordinates.mjs",
     "typecheck": "tsc --noEmit"

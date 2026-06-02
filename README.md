@@ -68,7 +68,7 @@ npm run data:build
 Or pass a custom CSV path:
 
 ```bash
-python scripts/convert_csv_to_json.py /path/to/file.csv
+python3 scripts/convert_csv_to_json.py /path/to/file.csv
 ```
 
 To repair missing or invalid coordinates in the generated JSON, run:
