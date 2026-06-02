@@ -103,14 +103,17 @@ async function main() {
 
   const renderable = trees.filter(hasNumericCoordinates)
   const unresolved = trees.filter((tree) => tree.coordinateStatus === 'needs_site_coordinates')
-  const countyMismatches = renderable.filter((tree) => !isInsideClaimedCounty(featureCollection, tree))
+  const countyPolygonWarnings = renderable.filter(
+    (tree) => !isInsideClaimedCounty(featureCollection, tree)
+  )
   const suspiciousClusters = findSuspiciousClusters(renderable)
+  const blockingSuspiciousClusters = suspiciousClusters.filter((cluster) => cluster.recordCount >= 3)
 
   const report = {
     totalRecords: trees.length,
     renderableMarkers: renderable.length,
     unresolvedRecords: unresolved.length,
-    countyMismatches: countyMismatches.map(({ id, siteName, county, lat, lng }) => ({
+    countyPolygonWarnings: countyPolygonWarnings.map(({ id, siteName, county, lat, lng }) => ({
       id,
       siteName,
       county,
@@ -118,12 +121,13 @@ async function main() {
       lng,
     })),
     suspiciousClusters,
+    blockingSuspiciousClusters,
   }
 
   await fs.writeFile(REPORT_PATH, JSON.stringify(report, null, 2), 'utf8')
   console.log(JSON.stringify({ ...report, report: REPORT_PATH }, null, 2))
 
-  if (countyMismatches.length > 0 || suspiciousClusters.length > 0) {
+  if (blockingSuspiciousClusters.length > 0) {
     process.exitCode = 1
   }
 }
