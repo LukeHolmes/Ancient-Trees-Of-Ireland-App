@@ -78,77 +78,6 @@ function getCountyFeatures(featureCollection, county) {
   return featureCollection.features.filter((f) => f.properties.NAME_1 === county)
 }
 
-function polygonArea(ring) {
-  let area = 0
-  for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
-    area += ring[j][0] * ring[i][1] - ring[i][0] * ring[j][1]
-  }
-  return Math.abs(area / 2)
-}
-
-function polygonCentroid(ring) {
-  let twiceArea = 0
-  let x = 0
-  let y = 0
-  for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
-    const f = ring[j][0] * ring[i][1] - ring[i][0] * ring[j][1]
-    twiceArea += f
-    x += (ring[j][0] + ring[i][0]) * f
-    y += (ring[j][1] + ring[i][1]) * f
-  }
-  if (Math.abs(twiceArea) < 1e-12) return null
-  const factor = 1 / (3 * twiceArea)
-  return { lng: x * factor, lat: y * factor }
-}
-
-function getFeatureRepresentativePoint(feature) {
-  const geom = feature.geometry
-  const candidatePolygons = []
-  if (geom.type === 'Polygon') {
-    candidatePolygons.push(geom.coordinates)
-  } else if (geom.type === 'MultiPolygon') {
-    candidatePolygons.push(...geom.coordinates)
-  }
-  if (!candidatePolygons.length) return null
-
-  let best = null
-  for (const poly of candidatePolygons) {
-    const outer = poly[0]
-    const area = polygonArea(outer)
-    if (!best || area > best.area) {
-      best = { outer, area, geom: { type: 'Polygon', coordinates: poly } }
-    }
-  }
-  if (!best) return null
-
-  const centroid = polygonCentroid(best.outer)
-  if (
-    centroid &&
-    pointInGeometry(centroid.lng, centroid.lat, best.geom) &&
-    Number.isFinite(centroid.lat) &&
-    Number.isFinite(centroid.lng)
-  ) {
-    return centroid
-  }
-  // Fall back to first outer-ring point on boundary.
-  return { lng: best.outer[0][0], lat: best.outer[0][1] }
-}
-
-function getCountyFallbackPoint(featureCollection, county) {
-  const countyFeatures = getCountyFeatures(featureCollection, county)
-  if (!countyFeatures.length) return null
-  let winner = null
-  for (const feature of countyFeatures) {
-    const point = getFeatureRepresentativePoint(feature)
-    if (!point) continue
-    if (!winner) {
-      winner = point
-      break
-    }
-  }
-  return winner
-}
-
 function isInsideClaimedCounty(featureCollection, county, lat, lng) {
   const countyFeatures = getCountyFeatures(featureCollection, county)
   if (!countyFeatures.length) return false
@@ -217,7 +146,10 @@ async function geocodeCandidate(query) {
 }
 
 function buildAuditRow(featureCollection, tree) {
-  const normalized = maybeSwapCoordinates(Number(tree.lat), Number(tree.lng))
+  if (typeof tree.lat !== 'number' || typeof tree.lng !== 'number') {
+    return { ...tree, lat: null, lng: null, inBounds: false, inCounty: false }
+  }
+  const normalized = maybeSwapCoordinates(tree.lat, tree.lng)
   const lat = normalized.lat
   const lng = normalized.lng
   const inBounds = inIrelandBounds(lat, lng)
@@ -234,7 +166,6 @@ async function main() {
   const needsRepair = audited.filter((row) => !row.inCounty)
 
   const repairedIds = new Set()
-  const fallbackIds = new Set()
   const unresolved = []
   const updated = [...audited]
 
@@ -255,7 +186,7 @@ async function main() {
             ...updated[idx],
             lat: candidate.lat,
             lng: candidate.lng,
-            repairedBy: 'nominatim',
+            coordinateStatus: 'site_geocoded',
           }
           repairedIds.add(row.id)
           fixed = true
@@ -267,23 +198,15 @@ async function main() {
     }
 
     if (!fixed) {
-      const fallback = getCountyFallbackPoint(featureCollection, row.county)
-      if (fallback && inIrelandBounds(fallback.lat, fallback.lng)) {
-        const idx = updated.findIndex((t) => t.id === row.id)
-        if (idx >= 0) {
-          updated[idx] = {
-            ...updated[idx],
-            lat: fallback.lat,
-            lng: fallback.lng,
-            repairedBy: 'county-fallback',
-          }
-          fallbackIds.add(row.id)
-          fixed = true
+      const idx = updated.findIndex((t) => t.id === row.id)
+      if (idx >= 0) {
+        updated[idx] = {
+          ...updated[idx],
+          lat: null,
+          lng: null,
+          coordinateStatus: 'needs_site_coordinates',
         }
       }
-    }
-
-    if (!fixed) {
       unresolved.push({
         id: row.id,
         county: row.county,
@@ -312,7 +235,6 @@ async function main() {
         totalTrees: trees.length,
         initiallyInvalid: needsRepair.length,
         repaired: repairedIds.size,
-        fallbackRepaired: fallbackIds.size,
         unresolved: unresolved.length,
         finalInvalid: finalMismatches.length,
         unresolvedExamples: unresolved.slice(0, 40),
@@ -329,7 +251,6 @@ async function main() {
         totalTrees: trees.length,
         initiallyInvalid: needsRepair.length,
         repaired: repairedIds.size,
-        fallbackRepaired: fallbackIds.size,
         unresolved: unresolved.length,
         finalInvalid: finalMismatches.length,
         report: REPORT_PATH,

@@ -47,6 +47,17 @@ npm run typecheck
 
 The app reads `public/data/trees.json`.
 
+Some records are retained with `coordinateStatus: "needs_site_coordinates"` and
+`null` coordinates. These records need source-level site coordinates before they
+can be shown as markers.
+
+Audit marker coordinates against Irish county polygons and suspicious duplicate
+marker clusters with:
+
+```bash
+npm run data:audit
+```
+
 The source CSV is optional and is not committed. If you have a source CSV named
 `HeritageTreesOfIreland_corrected.csv` in the project root, regenerate JSON with:
 

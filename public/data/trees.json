@@ -1,8 +1,8 @@
 [
   {
     "id": "1",
-    "lat": 53.92524193736698,
-    "lng": -9.38037034724685,
+    "lat": 53.5344314,
+    "lng": -9.2845995,
     "commonName": "European Silver Fir",
     "taxonName": "Abies alba",
     "siteName": "Ashford Castle Hotel, Co. Mayo",
@@ -13,12 +13,13 @@
     "form": "Multi-stem",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded"
   },
   {
     "id": "3",
-    "lat": 54.44334500790896,
-    "lng": -7.496098844536314,
+    "lat": null,
+    "lng": null,
     "commonName": "European Silver Fir",
     "taxonName": "Abies alba",
     "siteName": "Colebrooke Estate, Co. Fermanagh",
@@ -29,7 +30,8 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "needs_site_coordinates"
   },
   {
     "id": "4",
@@ -65,8 +67,8 @@
   },
   {
     "id": "9",
-    "lat": 53.72038248011699,
-    "lng": -8.235205341491309,
+    "lat": 54.0632253,
+    "lng": -8.1814444,
     "commonName": "Bristlecone Fir",
     "taxonName": "Abies bracteata",
     "siteName": "Kilronan Castle, Ballyfarnon, Co. Roscommon",
@@ -77,7 +79,8 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded"
   },
   {
     "id": "10",
@@ -97,8 +100,8 @@
   },
   {
     "id": "15",
-    "lat": 54.157579651685644,
-    "lng": -8.622745317616626,
+    "lat": 54.1741531,
+    "lng": -8.4615512,
     "commonName": "Field Maple",
     "taxonName": "Acer campestre",
     "siteName": "Markree House, Co. Sligo",
@@ -109,12 +112,13 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": "Holes"
+    "evidence": "Holes",
+    "coordinateStatus": "site_geocoded"
   },
   {
     "id": "16",
-    "lat": 54.44334500790896,
-    "lng": -7.496098844536314,
+    "lat": null,
+    "lng": null,
     "commonName": "Field Maple",
     "taxonName": "Acer campestre",
     "siteName": "Colebrooke Estate, Co. Fermanagh",
@@ -125,7 +129,8 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "needs_site_coordinates"
   },
   {
     "id": "21",
@@ -177,8 +182,8 @@
   },
   {
     "id": "27",
-    "lat": 53.99281776173718,
-    "lng": -7.358388150816215,
+    "lat": null,
+    "lng": null,
     "commonName": "Sycamore Maple",
     "taxonName": "Acer pseudoplatanus",
     "siteName": "Redhills House, Co. Cavan",
@@ -189,7 +194,8 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "needs_site_coordinates"
   },
   {
     "id": "28",
@@ -289,8 +295,8 @@
   },
   {
     "id": "44",
-    "lat": 53.99281776173718,
-    "lng": -7.358388150816215,
+    "lat": 53.9164191,
+    "lng": -6.7903542,
     "commonName": "Horse Chestnut",
     "taxonName": "Aesculus hippocastanum",
     "siteName": "Dun A Ri Forest Park, Co. Cavan",
@@ -301,7 +307,8 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": "Holes"
+    "evidence": "Holes",
+    "coordinateStatus": "site_geocoded"
   },
   {
     "id": "45",
@@ -321,8 +328,8 @@
   },
   {
     "id": "46",
-    "lat": 54.14560082965071,
-    "lng": -8.026248079340814,
+    "lat": 54.0148427,
+    "lng": -7.6093199,
     "commonName": "Horse Chestnut",
     "taxonName": "Aesculus hippocastanum",
     "siteName": "Killegar, Co. Leitrim",
@@ -333,7 +340,8 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "50 - 100 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded"
   },
   {
     "id": "49",
@@ -513,8 +521,8 @@
   },
   {
     "id": "71",
-    "lat": 54.157579651685644,
-    "lng": -8.622745317616626,
+    "lat": 54.2557859,
+    "lng": -8.4280182,
     "commonName": "Strawberry Tree",
     "taxonName": "Arbutus unedo",
     "siteName": "Hazelwood Forest, Co. Sligo",
@@ -525,12 +533,13 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded"
   },
   {
     "id": "78",
-    "lat": 54.92184744245481,
-    "lng": -7.9023504070861055,
+    "lat": 55.0246192,
+    "lng": -7.8219795,
     "commonName": "Silver Birch",
     "taxonName": "Betula pendula",
     "siteName": "Well of Doon, Co. Donegal",
@@ -541,12 +550,13 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "Not known",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded"
   },
   {
     "id": "79",
-    "lat": 53.200711236524505,
-    "lng": -7.5937195206845844,
+    "lat": 53.095342,
+    "lng": -7.91476,
     "commonName": "Common Box",
     "taxonName": "Buxus sempervirens",
     "siteName": "Birr Castle, Co. Offaly",
@@ -557,7 +567,8 @@
     "form": "Multi-stem",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded"
   },
   {
     "id": "80",
@@ -705,8 +716,8 @@
   },
   {
     "id": "110",
-    "lat": 53.72038248011699,
-    "lng": -8.235205341491309,
+    "lat": null,
+    "lng": null,
     "commonName": "Cedar of Lebanon",
     "taxonName": "Cedrus libani",
     "siteName": "Castle Forbes, Co. Roscommon",
@@ -717,12 +728,13 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "needs_site_coordinates"
   },
   {
     "id": "111",
-    "lat": 53.72038248011699,
-    "lng": -8.235205341491309,
+    "lat": null,
+    "lng": null,
     "commonName": "Cedar of Lebanon",
     "taxonName": "Cedrus libani",
     "siteName": "Castle Forbes, Co. Roscommon",
@@ -733,12 +745,13 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "needs_site_coordinates"
   },
   {
     "id": "112",
-    "lat": 53.72038248011699,
-    "lng": -8.235205341491309,
+    "lat": null,
+    "lng": null,
     "commonName": "Cedar of Lebanon",
     "taxonName": "Cedrus libani",
     "siteName": "Castle Forbes, Co. Roscommon",
@@ -749,7 +762,8 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "needs_site_coordinates"
   },
   {
     "id": "113",
@@ -897,8 +911,8 @@
   },
   {
     "id": "132",
-    "lat": 53.92524193736698,
-    "lng": -9.38037034724685,
+    "lat": null,
+    "lng": null,
     "commonName": "Common Hawthorn",
     "taxonName": "Crataegus monogyna",
     "siteName": "St Mary's Well, Ballina, Co. Mayo",
@@ -909,7 +923,8 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "needs_site_coordinates"
   },
   {
     "id": "133",
@@ -1121,8 +1136,8 @@
   },
   {
     "id": "161",
-    "lat": 53.92524193736698,
-    "lng": -9.38037034724685,
+    "lat": 53.5344314,
+    "lng": -9.2845995,
     "commonName": "Japanese Cedar",
     "taxonName": "Cryptomeria japonica",
     "siteName": "Ashford Castle Hotel, Co. Mayo",
@@ -1133,12 +1148,13 @@
     "form": "Group",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded"
   },
   {
     "id": "169",
-    "lat": 54.92184744245481,
-    "lng": -7.9023504070861055,
+    "lat": null,
+    "lng": null,
     "commonName": "Monterey Cypress",
     "taxonName": "Cupressus macrocarpa",
     "siteName": "Capuchin Friary, Cresslough, Co. Donegal",
@@ -1149,7 +1165,8 @@
     "form": "Multi-stem",
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "needs_site_coordinates"
   },
   {
     "id": "172",
@@ -1425,8 +1442,8 @@
   },
   {
     "id": "210",
-    "lat": 53.99281776173718,
-    "lng": -7.358388150816215,
+    "lat": null,
+    "lng": null,
     "commonName": "European Beech",
     "taxonName": "Fagus sylvatica",
     "siteName": "Rockview, Ballyhaise, Co. Cavan",
@@ -1437,12 +1454,13 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "needs_site_coordinates"
   },
   {
     "id": "211",
-    "lat": 54.14560082965071,
-    "lng": -8.026248079340814,
+    "lat": 54.0148427,
+    "lng": -7.6093199,
     "commonName": "European Beech",
     "taxonName": "Fagus sylvatica",
     "siteName": "Killegar, Co. Leitrim",
@@ -1453,7 +1471,8 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded"
   },
   {
     "id": "213",
@@ -1553,8 +1572,8 @@
   },
   {
     "id": "222",
-    "lat": 53.200711236524505,
-    "lng": -7.5937195206845844,
+    "lat": 53.095342,
+    "lng": -7.91476,
     "commonName": "European Beech",
     "taxonName": "Fagus sylvatica",
     "siteName": "Birr Castle, Co. Offaly",
@@ -1565,7 +1584,8 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "50 - 100 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded"
   },
   {
     "id": "223",
@@ -1617,8 +1637,8 @@
   },
   {
     "id": "226",
-    "lat": 54.92184744245481,
-    "lng": -7.9023504070861055,
+    "lat": null,
+    "lng": null,
     "commonName": "European Beech",
     "taxonName": "Fagus sylvatica",
     "siteName": "Ballyloughan House, Co. Donegal",
@@ -1629,7 +1649,8 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "needs_site_coordinates"
   },
   {
     "id": "227",
@@ -1825,8 +1846,8 @@
   },
   {
     "id": "254",
-    "lat": 53.6323452039467,
-    "lng": -6.704895351888238,
+    "lat": null,
+    "lng": null,
     "commonName": "European Ash",
     "taxonName": "Fraxinus excelsior",
     "siteName": "Mellifont Abbey, Co. Meath",
@@ -1837,12 +1858,13 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "50 - 100 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "needs_site_coordinates"
   },
   {
     "id": "255",
-    "lat": 54.14560082965071,
-    "lng": -8.026248079340814,
+    "lat": null,
+    "lng": null,
     "commonName": "European Ash",
     "taxonName": "Fraxinus excelsior",
     "siteName": "St Patricks Well, Aughnasheelan, Co. Leitrim",
@@ -1853,7 +1875,8 @@
     "form": "",
     "condition": "Not Recorded",
     "ageRange": "150 - 200 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "needs_site_coordinates"
   },
   {
     "id": "258",
@@ -1969,8 +1992,8 @@
   },
   {
     "id": "274",
-    "lat": 54.14560082965071,
-    "lng": -8.026248079340814,
+    "lat": null,
+    "lng": null,
     "commonName": "European Ash",
     "taxonName": "Fraxinus excelsior",
     "siteName": "Organic Galloway Farm, Drumkeeran, Co. Leitrim",
@@ -1981,12 +2004,13 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "needs_site_coordinates"
   },
   {
     "id": "276",
-    "lat": 54.157579651685644,
-    "lng": -8.622745317616626,
+    "lat": 54.2669798,
+    "lng": -8.7001581,
     "commonName": "European Ash",
     "taxonName": "Fraxinus excelsior",
     "siteName": "St Patricks Well, Co. Sligo",
@@ -1997,12 +2021,13 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded"
   },
   {
     "id": "279",
-    "lat": 54.44334500790896,
-    "lng": -7.496098844536314,
+    "lat": null,
+    "lng": null,
     "commonName": "European Ash",
     "taxonName": "Fraxinus excelsior",
     "siteName": "Colebrooke Estate, Co. Fermanagh",
@@ -2013,7 +2038,8 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "needs_site_coordinates"
   },
   {
     "id": "280",
@@ -2065,8 +2091,8 @@
   },
   {
     "id": "284",
-    "lat": 53.5179463990895,
-    "lng": -7.437147724447067,
+    "lat": null,
+    "lng": null,
     "commonName": "European Ash",
     "taxonName": "Fraxinus excelsior",
     "siteName": "Boherard, Co. Westmeath",
@@ -2077,7 +2103,8 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "needs_site_coordinates"
   },
   {
     "id": "286",
@@ -2225,8 +2252,8 @@
   },
   {
     "id": "322",
-    "lat": 54.44334500790896,
-    "lng": -7.496098844536314,
+    "lat": null,
+    "lng": null,
     "commonName": "Alpine Laburnum",
     "taxonName": "Laburnum alpinum",
     "siteName": "Colebrooke Estate, Co. Fermanagh",
@@ -2237,12 +2264,13 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "needs_site_coordinates"
   },
   {
     "id": "323",
-    "lat": 54.44334500790896,
-    "lng": -7.496098844536314,
+    "lat": null,
+    "lng": null,
     "commonName": "Alpine Laburnum",
     "taxonName": "Laburnum alpinum",
     "siteName": "Colebrooke Estate, Co. Fermanagh",
@@ -2253,7 +2281,8 @@
     "form": "Maiden",
     "condition": "Fallen alive",
     "ageRange": "150 - 200 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "needs_site_coordinates"
   },
   {
     "id": "328",
@@ -2337,8 +2366,8 @@
   },
   {
     "id": "345",
-    "lat": 53.99281776173718,
-    "lng": -7.358388150816215,
+    "lat": null,
+    "lng": null,
     "commonName": "Cucumber Tree",
     "taxonName": "Magnolia acuminata",
     "siteName": "The Bishop's See, Co. Cavan",
@@ -2349,7 +2378,8 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "needs_site_coordinates"
   },
   {
     "id": "350",
@@ -2401,8 +2431,8 @@
   },
   {
     "id": "355",
-    "lat": 53.200711236524505,
-    "lng": -7.5937195206845844,
+    "lat": 53.095342,
+    "lng": -7.91476,
     "commonName": "Dawn Redwood",
     "taxonName": "Metasequoia glyptostroboides",
     "siteName": "Birr Castle, Co. Offaly",
@@ -2413,7 +2443,8 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "50 - 100 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded"
   },
   {
     "id": "357",
@@ -2609,8 +2640,8 @@
   },
   {
     "id": "396",
-    "lat": 52.126614848357235,
-    "lng": -9.730166328370359,
+    "lat": null,
+    "lng": null,
     "commonName": "Monterey Pine",
     "taxonName": "Pinus radiata",
     "siteName": "Collis-Sands House, Tralee, Co. Kerry",
@@ -2621,12 +2652,13 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
-    "evidence": "Hollowing"
+    "evidence": "Hollowing",
+    "coordinateStatus": "needs_site_coordinates"
   },
   {
     "id": "397",
-    "lat": 54.92184744245481,
-    "lng": -7.9023504070861055,
+    "lat": null,
+    "lng": null,
     "commonName": "Monterey Pine",
     "taxonName": "Pinus radiata",
     "siteName": "Capuchin Friary, Cresslough, Co. Donegal",
@@ -2637,7 +2669,8 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
-    "evidence": "Hollowing"
+    "evidence": "Hollowing",
+    "coordinateStatus": "needs_site_coordinates"
   },
   {
     "id": "400",
@@ -2689,8 +2722,8 @@
   },
   {
     "id": "407",
-    "lat": 54.44334500790896,
-    "lng": -7.496098844536314,
+    "lat": null,
+    "lng": null,
     "commonName": "Scots Pine",
     "taxonName": "Pinus sylvestris",
     "siteName": "Colebrooke Estate, Co. Fermanagh",
@@ -2701,7 +2734,8 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "needs_site_coordinates"
   },
   {
     "id": "413",
@@ -2753,8 +2787,8 @@
   },
   {
     "id": "424",
-    "lat": 54.14560082965071,
-    "lng": -8.026248079340814,
+    "lat": null,
+    "lng": null,
     "commonName": "Black Poplar",
     "taxonName": "Populus nigra",
     "siteName": "Organic Galloway Farm, Drumkeeran, Co. Leitrim",
@@ -2765,12 +2799,13 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "needs_site_coordinates"
   },
   {
     "id": "425",
-    "lat": 54.14560082965071,
-    "lng": -8.026248079340814,
+    "lat": null,
+    "lng": null,
     "commonName": "Black Poplar",
     "taxonName": "Populus nigra",
     "siteName": "Ballymagauran, Co. Leitrim",
@@ -2781,12 +2816,13 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
-    "evidence": "Hollowing"
+    "evidence": "Hollowing",
+    "coordinateStatus": "needs_site_coordinates"
   },
   {
     "id": "430",
-    "lat": 53.200711236524505,
-    "lng": -7.5937195206845844,
+    "lat": 53.095342,
+    "lng": -7.91476,
     "commonName": "Grey Poplar",
     "taxonName": "Populus alba x tremula = P. x canescens",
     "siteName": "Birr Castle, Co. Offaly",
@@ -2797,7 +2833,8 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded"
   },
   {
     "id": "433",
@@ -2865,8 +2902,8 @@
   },
   {
     "id": "453",
-    "lat": 54.157579651685644,
-    "lng": -8.622745317616626,
+    "lat": 54.2557859,
+    "lng": -8.4280182,
     "commonName": "Holm Oak",
     "taxonName": "Quercus ilex",
     "siteName": "Hazelwood Forest, Co. Sligo",
@@ -2877,7 +2914,8 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "50 - 100 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded"
   },
   {
     "id": "458",
@@ -3057,8 +3095,8 @@
   },
   {
     "id": "475",
-    "lat": 53.72038248011699,
-    "lng": -8.235205341491309,
+    "lat": null,
+    "lng": null,
     "commonName": "English Oak",
     "taxonName": "Quercus robur",
     "siteName": "Castle Forbes, Co. Roscommon",
@@ -3069,7 +3107,8 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "300 - 500 years",
-    "evidence": "Fungi"
+    "evidence": "Fungi",
+    "coordinateStatus": "needs_site_coordinates"
   },
   {
     "id": "476",
@@ -3297,8 +3336,8 @@
   },
   {
     "id": "507",
-    "lat": 53.6323452039467,
-    "lng": -6.704895351888238,
+    "lat": null,
+    "lng": null,
     "commonName": "English Oak",
     "taxonName": "Quercus robur",
     "siteName": "Crockaneran, Collon, Co. Meath",
@@ -3309,12 +3348,13 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "needs_site_coordinates"
   },
   {
     "id": "508",
-    "lat": 53.200711236524505,
-    "lng": -7.5937195206845844,
+    "lat": 53.095342,
+    "lng": -7.91476,
     "commonName": "English Oak",
     "taxonName": "Quercus robur",
     "siteName": "Birr Castle, Co. Offaly",
@@ -3325,7 +3365,8 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "300 - 500 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded"
   },
   {
     "id": "511",
@@ -3473,8 +3514,8 @@
   },
   {
     "id": "539",
-    "lat": 53.200711236524505,
-    "lng": -7.5937195206845844,
+    "lat": 53.095342,
+    "lng": -7.91476,
     "commonName": "Black Locust",
     "taxonName": "Robinia pseudoacacia",
     "siteName": "Birr Castle, Co. Offaly",
@@ -3485,7 +3526,8 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": "Hollowing"
+    "evidence": "Hollowing",
+    "coordinateStatus": "site_geocoded"
   },
   {
     "id": "542",
@@ -3665,8 +3707,8 @@
   },
   {
     "id": "569",
-    "lat": 54.92184744245481,
-    "lng": -7.9023504070861055,
+    "lat": null,
+    "lng": null,
     "commonName": "Rowan",
     "taxonName": "Sorbus aucuparia",
     "siteName": "Castlegrove House Hotel, Co. Donegal",
@@ -3677,7 +3719,8 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "needs_site_coordinates"
   },
   {
     "id": "570",
@@ -3841,8 +3884,8 @@
   },
   {
     "id": "596",
-    "lat": 54.92184744245481,
-    "lng": -7.9023504070861055,
+    "lat": null,
+    "lng": null,
     "commonName": "English Yew",
     "taxonName": "Taxus baccata",
     "siteName": "Castlegrove House Hotel, Co. Donegal",
@@ -3853,7 +3896,8 @@
     "form": "Multi-stem",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "needs_site_coordinates"
   },
   {
     "id": "597",
@@ -4273,8 +4317,8 @@
   },
   {
     "id": "650",
-    "lat": 53.92524193736698,
-    "lng": -9.38037034724685,
+    "lat": 53.5401987,
+    "lng": -9.2869694,
     "commonName": "English Yew",
     "taxonName": "Taxus baccata",
     "siteName": "Cong Abbey, Co. Mayo",
@@ -4285,7 +4329,8 @@
     "form": "Multi-stem",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded"
   },
   {
     "id": "651",
@@ -4321,8 +4366,8 @@
   },
   {
     "id": "655",
-    "lat": 54.14560082965071,
-    "lng": -8.026248079340814,
+    "lat": 53.9271228,
+    "lng": -8.0066575,
     "commonName": "English Yew",
     "taxonName": "Taxus baccata",
     "siteName": "St Marys Church, Co. Leitrim",
@@ -4333,7 +4378,8 @@
     "form": "Multi-stem",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded"
   },
   {
     "id": "657",
@@ -4417,8 +4463,8 @@
   },
   {
     "id": "662",
-    "lat": 53.99281776173718,
-    "lng": -7.358388150816215,
+    "lat": null,
+    "lng": null,
     "commonName": "English Yew",
     "taxonName": "Taxus baccata",
     "siteName": "Redhills House, Co. Cavan",
@@ -4429,7 +4475,8 @@
     "form": "Group",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": "Holes"
+    "evidence": "Holes",
+    "coordinateStatus": "needs_site_coordinates"
   },
   {
     "id": "664",
@@ -4705,8 +4752,8 @@
   },
   {
     "id": "690",
-    "lat": 53.72038248011699,
-    "lng": -8.235205341491309,
+    "lat": null,
+    "lng": null,
     "commonName": "Common Lime",
     "taxonName": "Tilia platyphyllos x cordata = T. x europaea",
     "siteName": "Castle Forbes, Co. Roscommon",
@@ -4717,7 +4764,8 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "needs_site_coordinates"
   },
   {
     "id": "691",
@@ -4801,8 +4849,8 @@
   },
   {
     "id": "698",
-    "lat": 54.14560082965071,
-    "lng": -8.026248079340814,
+    "lat": 54.0148427,
+    "lng": -7.6093199,
     "commonName": "Common Lime",
     "taxonName": "Tilia platyphyllos x cordata = T. x europaea",
     "siteName": "Killegar, Co. Leitrim",
@@ -4813,7 +4861,8 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded"
   },
   {
     "id": "702",
@@ -4833,8 +4882,8 @@
   },
   {
     "id": "703",
-    "lat": 53.72038248011699,
-    "lng": -8.235205341491309,
+    "lat": 54.0632253,
+    "lng": -8.1814444,
     "commonName": "Western Hemlock",
     "taxonName": "Tsuga heterophylla",
     "siteName": "Kilronan Castle, Ballyfarnon, Co. Roscommon",
@@ -4845,7 +4894,8 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
-    "evidence": "Fungi"
+    "evidence": "Fungi",
+    "coordinateStatus": "site_geocoded"
   },
   {
     "id": "704",
@@ -4881,8 +4931,8 @@
   },
   {
     "id": "706",
-    "lat": 54.92184744245481,
-    "lng": -7.9023504070861055,
+    "lat": null,
+    "lng": null,
     "commonName": "Wych Elm",
     "taxonName": "Ulmus glabra",
     "siteName": "Bruckles House, Co. Donegal",
@@ -4893,12 +4943,13 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "needs_site_coordinates"
   },
   {
     "id": "707",
-    "lat": 54.92184744245481,
-    "lng": -7.9023504070861055,
+    "lat": null,
+    "lng": null,
     "commonName": "Wych Elm",
     "taxonName": "Ulmus glabra",
     "siteName": "Bruckles House, Co. Donegal",
@@ -4909,12 +4960,13 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "needs_site_coordinates"
   },
   {
     "id": "709",
-    "lat": 54.92184744245481,
-    "lng": -7.9023504070861055,
+    "lat": null,
+    "lng": null,
     "commonName": "Wych Elm",
     "taxonName": "Ulmus glabra",
     "siteName": "Pink House, Co. Donegal",
@@ -4925,7 +4977,8 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
-    "evidence": "Fungi"
+    "evidence": "Fungi",
+    "coordinateStatus": "needs_site_coordinates"
   },
   {
     "id": "711",
@@ -4945,8 +4998,8 @@
   },
   {
     "id": "713",
-    "lat": 54.92184744245481,
-    "lng": -7.9023504070861055,
+    "lat": null,
+    "lng": null,
     "commonName": "Wych Elm",
     "taxonName": "Ulmus glabra",
     "siteName": "Clonmullan House, Co. Donegal",
@@ -4957,12 +5010,13 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "needs_site_coordinates"
   },
   {
     "id": "714",
-    "lat": 54.92184744245481,
-    "lng": -7.9023504070861055,
+    "lat": null,
+    "lng": null,
     "commonName": "Wych Elm",
     "taxonName": "Ulmus glabra",
     "siteName": "Clonmullan House, Co. Donegal",
@@ -4973,12 +5027,13 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "needs_site_coordinates"
   },
   {
     "id": "715",
-    "lat": 54.92184744245481,
-    "lng": -7.9023504070861055,
+    "lat": null,
+    "lng": null,
     "commonName": "Wych Elm",
     "taxonName": "Ulmus glabra",
     "siteName": "Bridge Cottage, Glenties, Co. Donegal",
@@ -4989,7 +5044,8 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "needs_site_coordinates"
   },
   {
     "id": "717",
@@ -5009,8 +5065,8 @@
   },
   {
     "id": "718",
-    "lat": 54.92184744245481,
-    "lng": -7.9023504070861055,
+    "lat": null,
+    "lng": null,
     "commonName": "Wych Elm",
     "taxonName": "Ulmus glabra",
     "siteName": "Rossylongon, Co. Donegal",
@@ -5021,7 +5077,8 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "needs_site_coordinates"
   },
   {
     "id": "721",
@@ -5041,8 +5098,8 @@
   },
   {
     "id": "723",
-    "lat": 54.92184744245481,
-    "lng": -7.9023504070861055,
+    "lat": null,
+    "lng": null,
     "commonName": "Wych Elm",
     "taxonName": "Ulmus glabra",
     "siteName": "Hollymount, Co. Donegal",
@@ -5053,12 +5110,13 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "needs_site_coordinates"
   },
   {
     "id": "724",
-    "lat": 54.92184744245481,
-    "lng": -7.9023504070861055,
+    "lat": null,
+    "lng": null,
     "commonName": "Wych Elm",
     "taxonName": "Ulmus glabra",
     "siteName": "Hollymount, Co. Donegal",
@@ -5069,12 +5127,13 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "needs_site_coordinates"
   },
   {
     "id": "725",
-    "lat": 54.92184744245481,
-    "lng": -7.9023504070861055,
+    "lat": null,
+    "lng": null,
     "commonName": "Wych Elm",
     "taxonName": "Ulmus glabra",
     "siteName": "Clonmullan House, Co. Donegal",
@@ -5085,12 +5144,13 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "needs_site_coordinates"
   },
   {
     "id": "726",
-    "lat": 54.92184744245481,
-    "lng": -7.9023504070861055,
+    "lat": null,
+    "lng": null,
     "commonName": "Wych Elm",
     "taxonName": "Ulmus glabra",
     "siteName": "Clonmullan House, Co. Donegal",
@@ -5101,7 +5161,8 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "needs_site_coordinates"
   },
   {
     "id": "727",

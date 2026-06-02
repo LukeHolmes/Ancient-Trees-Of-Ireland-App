@@ -1,6 +1,6 @@
 import { promises as fs } from 'fs'
 import path from 'path'
-import type { Tree } from '@/types/tree'
+import type { Tree, TreeRecord } from '@/types/tree'
 import MapApp from '@/components/MapApp'
 
 // [lng, lat] polygon that approximates the island of Ireland.
@@ -56,8 +56,13 @@ function isPointInPolygon(lat: number, lng: number, polygon: [number, number][])
   return inside
 }
 
-function normalizeAndFilterTrees(trees: Tree[]): Tree[] {
+function hasNumericCoordinates(tree: TreeRecord): tree is TreeRecord & { lat: number; lng: number } {
+  return typeof tree.lat === 'number' && typeof tree.lng === 'number'
+}
+
+function normalizeAndFilterTrees(trees: TreeRecord[]): Tree[] {
   return trees
+    .filter(hasNumericCoordinates)
     .map((tree) => {
       const coords = maybeSwapCoordinates(tree.lat, tree.lng)
       return { ...tree, lat: coords.lat, lng: coords.lng }
@@ -73,7 +78,7 @@ function normalizeAndFilterTrees(trees: Tree[]): Tree[] {
 export default async function Home() {
   const filePath = path.join(process.cwd(), 'public', 'data', 'trees.json')
   const raw = await fs.readFile(filePath, 'utf-8')
-  const trees: Tree[] = JSON.parse(raw)
+  const trees: TreeRecord[] = JSON.parse(raw)
   const cleanedTrees = normalizeAndFilterTrees(trees)
 
   return <MapApp trees={cleanedTrees} />
