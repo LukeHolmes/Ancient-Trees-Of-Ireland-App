@@ -27,6 +27,17 @@ export default function Header({ totalCount }: HeaderProps) {
           <p className="text-xs text-parchment/60 mt-2 leading-relaxed">
             Discover Ireland&apos;s living heritage - trees of extraordinary age and significance
           </p>
+          <p className="text-[11px] text-parchment/55 mt-3 leading-relaxed">
+            Website &amp; contact:{' '}
+            <a
+              href="https://lukeholmes.github.io/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-amber hover:text-parchment transition-colors underline decoration-amber/40 underline-offset-4"
+            >
+              lukeholmes.github.io
+            </a>
+          </p>
         </div>
         <div className="flex-shrink-0 mt-1">
           <span
