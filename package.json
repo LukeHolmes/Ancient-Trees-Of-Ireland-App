@@ -7,27 +7,28 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "data:build": "python scripts/convert_csv_to_json.py",
-    "data:repair": "node scripts/repair_tree_coordinates.mjs"
+    "data:build": "python3 scripts/convert_csv_to_json.py",
+    "data:audit": "node scripts/audit_tree_coordinates.mjs",
+    "data:repair": "node scripts/repair_tree_coordinates.mjs",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "leaflet": "^1.9.4",
     "next": "14.2.35",
     "react": "^18",
     "react-dom": "^18",
-    "leaflet": "^1.9.4",
-    "react-leaflet": "^4.2.1",
-    "@types/leaflet": "^1.9.8",
-    "clsx": "^2.1.1"
+    "react-leaflet": "^4.2.1"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@types/leaflet": "^1.9.21",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.35",
     "postcss": "^8.5.6",
     "tailwindcss": "^3.4.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.35"
+    "typescript": "^5"
   }
 }
