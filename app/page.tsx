@@ -1,9 +1,7 @@
 import { promises as fs } from 'fs'
 import path from 'path'
-import dynamic from 'next/dynamic'
 import type { Tree } from '@/types/tree'
-
-const MapApp = dynamic(() => import('@/components/MapApp'), { ssr: false })
+import MapApp from '@/components/MapApp'
 
 // [lng, lat] polygon that approximates the island of Ireland.
 const IRELAND_POLYGON: [number, number][] = [

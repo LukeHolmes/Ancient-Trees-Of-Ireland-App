@@ -3,28 +3,14 @@
 import { useState, useCallback } from 'react'
 import dynamic from 'next/dynamic'
 import type { Tree } from '@/types/tree'
+import type { Filters } from '@/types/filters'
+import { DEFAULT_FILTERS } from '@/types/filters'
 import Header from '@/components/Header'
 import StatsBar from '@/components/StatsBar'
 import FilterPanel from '@/components/FilterPanel'
 import TreeList from '@/components/TreeList'
 
 const MapView = dynamic(() => import('@/components/MapView'), { ssr: false })
-
-export interface Filters {
-  counties: string[]
-  broadTypes: string[]
-  commonNames: string[]
-  ageRanges: string[]
-  condition: string
-}
-
-const DEFAULT_FILTERS: Filters = {
-  counties: [],
-  broadTypes: [],
-  commonNames: [],
-  ageRanges: [],
-  condition: '',
-}
 
 interface MapAppProps {
   trees: Tree[]

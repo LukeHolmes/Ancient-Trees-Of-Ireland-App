@@ -1,8 +1,10 @@
 'use client'
 
 import { useMemo } from 'react'
+import type { ReactNode } from 'react'
 import type { Tree } from '@/types/tree'
-import type { Filters } from '@/components/MapApp'
+import type { Filters } from '@/types/filters'
+import { DEFAULT_FILTERS } from '@/types/filters'
 
 interface FilterPanelProps {
   trees: Tree[]
@@ -10,7 +12,7 @@ interface FilterPanelProps {
   onChange: (filters: Filters) => void
 }
 
-function Section({ title, children }: { title: string; children: React.ReactNode }) {
+function Section({ title, children }: { title: string; children: ReactNode }) {
   return (
     <div className="mb-4">
       <h3
@@ -92,13 +94,7 @@ export default function FilterPanel({ trees, filters, onChange }: FilterPanelPro
   }
 
   const clearAll = () => {
-    onChange({
-      counties: [],
-      broadTypes: [],
-      commonNames: [],
-      ageRanges: [],
-      condition: '',
-    })
+    onChange(DEFAULT_FILTERS)
   }
 
   const hasFilters =
@@ -110,7 +106,7 @@ export default function FilterPanel({ trees, filters, onChange }: FilterPanelPro
 
   return (
     <div
-      className="px-4 py-4 flex-shrink-0 overflow-y-auto"
+      className="py-4 flex-shrink-0 overflow-y-auto"
       style={{
         borderBottom: '1px solid rgba(196, 148, 58, 0.2)',
         maxHeight: 340,
