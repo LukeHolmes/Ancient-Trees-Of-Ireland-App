@@ -5,6 +5,7 @@ out/
 # Node
 node_modules/
 npm-debug.log*
+tsconfig.tsbuildinfo
 
 # Misc
 .DS_Store
