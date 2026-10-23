@@ -42,7 +42,7 @@ body {
 }
 
 /* Dark-theme styling when using the keyless OpenStreetMap fallback */
-.leaflet-container.map-basemap-osm-fallback .leaflet-tile-pane {
+.leaflet-container.map-basemap-osm-fallback .leaflet-tile-pane img {
   filter: invert(100%) hue-rotate(180deg) brightness(0.85) contrast(0.92);
 }
 .leaflet-popup-content-wrapper {
