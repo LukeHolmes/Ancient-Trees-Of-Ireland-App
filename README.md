@@ -29,6 +29,13 @@ npm run dev
 http://localhost:3000
 ```
 
+### Map tiles (optional)
+
+CARTO raster basemaps now require a free API key. Without one, the app falls back to
+OpenStreetMap tiles (still fully functional). For the original dark CARTO style, copy
+`.env.example` to `.env.local` and set `NEXT_PUBLIC_CARTO_API_KEY` from
+[carto.com/basemaps/apikey](https://carto.com/basemaps/apikey/).
+
 ## Production
 
 ```bash

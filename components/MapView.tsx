@@ -3,6 +3,7 @@
 import { useEffect, useRef } from 'react'
 import { MapContainer, TileLayer, CircleMarker, Popup, useMap } from 'react-leaflet'
 import type { Tree } from '@/types/tree'
+import { getBasemapConfig } from '@/lib/basemap'
 
 const BROAD_TYPE_COLORS: Record<string, string> = {
   Oaks: '#8B6914',
@@ -66,17 +67,17 @@ interface MapViewProps {
 }
 
 export default function MapView({ trees, selectedId, flyTo, onSelectTree }: MapViewProps) {
+  const basemap = getBasemapConfig()
+
   return (
     <MapContainer
       center={[53.4, -7.9]}
       zoom={7}
+      className={basemap.containerClassName}
       style={{ height: '100%', width: '100%' }}
       zoomControl={true}
     >
-      <TileLayer
-        attribution='&copy; <a href="https://carto.com/">CARTO</a>'
-        url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
-      />
+      <TileLayer attribution={basemap.attribution} url={basemap.url} />
       <FlyController flyTo={flyTo} />
       {trees.map((tree) => {
         const isSelected = selectedId === tree.id

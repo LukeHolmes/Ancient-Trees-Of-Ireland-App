@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Import Leaflet CSS */
-@import 'leaflet/dist/leaflet.css';
-
 :root {
   --green-dark: #0F2318;
   --green-primary: #1C4A2A;
@@ -42,6 +39,11 @@ body {
 /* Leaflet overrides */
 .leaflet-container {
   background: #1a2e20;
+}
+
+/* Dark-theme styling when using the keyless OpenStreetMap fallback */
+.leaflet-container.map-basemap-osm-fallback .leaflet-tile-pane {
+  filter: invert(100%) hue-rotate(180deg) brightness(0.85) contrast(0.92);
 }
 .leaflet-popup-content-wrapper {
   background: #1C4A2A;
