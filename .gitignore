@@ -17,3 +17,6 @@ __pycache__/
 .env
 .vercel
 tmp/
+
+test-results/
+playwright-report/

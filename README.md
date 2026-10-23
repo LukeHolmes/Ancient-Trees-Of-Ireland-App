@@ -29,12 +29,29 @@ npm run dev
 http://localhost:3000
 ```
 
+### Map tiles (optional)
+
+CARTO raster basemaps now require a free API key. Without one, the app falls back to
+OpenStreetMap tiles (still fully functional). For the original dark CARTO style, copy
+`.env.example` to `.env.local` and set `NEXT_PUBLIC_CARTO_API_KEY` from
+[carto.com/basemaps/apikey](https://carto.com/basemaps/apikey/).
+
 ## Production
 
 ```bash
 npm run build
 npm run start
 ```
+
+### Vercel
+
+Set `NEXT_PUBLIC_CARTO_API_KEY` in the project environment (Production + Preview) for the dark CARTO basemap. See [AGENTS.md](./AGENTS.md).
+
+## Features
+
+- Text search (`q` URL param), shareable links (`?tree=1&county=Mayo`), tree detail panel
+- Virtualised results list (full dataset)
+- Playwright smoke tests: `npm run test:e2e`
 
 ## Checks
 
@@ -56,6 +73,22 @@ marker clusters with:
 
 ```bash
 npm run data:audit
+npm run data:verify-counties
+```
+
+`data:verify-counties` downloads Tailte Éireann statutory county boundaries (data.gov.ie),
+compares each marker to its claimed county, and spot-checks placements with Nominatim.
+
+Refresh placement confidence fields after manual edits:
+
+```bash
+npm run data:apply-placement
+```
+
+Attempt Nominatim backfill for records missing coordinates (rate-limited):
+
+```bash
+npm run data:backfill-coords
 ```
 
 The source CSV is optional and is not committed. If you have a source CSV named

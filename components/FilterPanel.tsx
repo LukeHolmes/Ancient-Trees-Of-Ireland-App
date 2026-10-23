@@ -2,12 +2,12 @@
 
 import { useMemo } from 'react'
 import type { ReactNode } from 'react'
-import type { Tree } from '@/types/tree'
+import type { TreeRecord } from '@/types/tree'
 import type { Filters } from '@/types/filters'
 import { DEFAULT_FILTERS } from '@/types/filters'
 
 interface FilterPanelProps {
-  trees: Tree[]
+  records: TreeRecord[]
   filters: Filters
   onChange: (filters: Filters) => void
 }
@@ -62,26 +62,26 @@ function MultiCheckList({
   )
 }
 
-export default function FilterPanel({ trees, filters, onChange }: FilterPanelProps) {
+export default function FilterPanel({ records, filters, onChange }: FilterPanelProps) {
   const allCounties = useMemo(
-    () => [...new Set(trees.map((t) => t.county).filter(Boolean))].sort(),
-    [trees]
+    () => [...new Set(records.map((t) => t.county).filter(Boolean))].sort(),
+    [records]
   )
   const allBroadTypes = useMemo(
-    () => [...new Set(trees.map((t) => t.broadType).filter(Boolean))].sort(),
-    [trees]
+    () => [...new Set(records.map((t) => t.broadType).filter(Boolean))].sort(),
+    [records]
   )
   const allCommonNames = useMemo(
-    () => [...new Set(trees.map((t) => t.commonName).filter(Boolean))].sort(),
-    [trees]
+    () => [...new Set(records.map((t) => t.commonName).filter(Boolean))].sort(),
+    [records]
   )
   const allAgeRanges = useMemo(
-    () => [...new Set(trees.map((t) => t.ageRange).filter(Boolean))].sort(),
-    [trees]
+    () => [...new Set(records.map((t) => t.ageRange).filter(Boolean))].sort(),
+    [records]
   )
   const allConditions = useMemo(
-    () => ['', ...[...new Set(trees.map((t) => t.condition).filter(Boolean))].sort()],
-    [trees]
+    () => ['', ...[...new Set(records.map((t) => t.condition).filter(Boolean))].sort()],
+    [records]
   )
 
   const toggle = (
@@ -98,11 +98,14 @@ export default function FilterPanel({ trees, filters, onChange }: FilterPanelPro
   }
 
   const hasFilters =
+    filters.searchQuery.trim() !== '' ||
     filters.counties.length > 0 ||
     filters.broadTypes.length > 0 ||
     filters.commonNames.length > 0 ||
     filters.ageRanges.length > 0 ||
-    filters.condition !== ''
+    filters.condition !== '' ||
+    !filters.mappableOnly ||
+    filters.showCountyBoundaries
 
   return (
     <div
@@ -133,6 +136,42 @@ export default function FilterPanel({ trees, filters, onChange }: FilterPanelPro
           </button>
         )}
       </div>
+
+      <Section title="Search">
+        <input
+          type="search"
+          value={filters.searchQuery}
+          onChange={(e) => onChange({ ...filters, searchQuery: e.target.value })}
+          placeholder="Site, species, or taxon…"
+          className="w-full rounded px-3 py-2 text-xs outline-none"
+          style={{
+            background: 'rgba(15, 35, 24, 0.6)',
+            border: '1px solid rgba(74, 124, 89, 0.3)',
+            color: '#F5F0E8',
+          }}
+        />
+      </Section>
+
+      <Section title="Display">
+        <label className="flex items-center gap-2 mb-2 cursor-pointer">
+          <input
+            type="checkbox"
+            checked={filters.mappableOnly}
+            onChange={(e) => onChange({ ...filters, mappableOnly: e.target.checked })}
+            className="accent-amber w-3 h-3 flex-shrink-0"
+          />
+          <span className="text-xs text-parchment/80">Mappable trees only</span>
+        </label>
+        <label className="flex items-center gap-2 cursor-pointer">
+          <input
+            type="checkbox"
+            checked={filters.showCountyBoundaries}
+            onChange={(e) => onChange({ ...filters, showCountyBoundaries: e.target.checked })}
+            className="accent-amber w-3 h-3 flex-shrink-0"
+          />
+          <span className="text-xs text-parchment/80">Show county outlines</span>
+        </label>
+      </Section>
 
       <Section title="County">
         <MultiCheckList

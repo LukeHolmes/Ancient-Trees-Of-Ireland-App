@@ -1,8 +1,12 @@
 'use client'
 
-import { useEffect, useRef } from 'react'
-import { MapContainer, TileLayer, CircleMarker, Popup, useMap } from 'react-leaflet'
+import { useEffect, useRef, useState } from 'react'
+import { MapContainer, TileLayer, CircleMarker, Popup, GeoJSON, useMap } from 'react-leaflet'
+import MarkerClusterGroup from 'react-leaflet-cluster'
+import type { GeoJsonObject } from 'geojson'
 import type { Tree } from '@/types/tree'
+import { getBasemapConfig } from '@/lib/basemap'
+import { placementPopupNote } from '@/lib/placementPopupNote'
 
 const BROAD_TYPE_COLORS: Record<string, string> = {
   Oaks: '#8B6914',
@@ -50,7 +54,14 @@ function FlyController({ flyTo }: FlyControllerProps) {
       flyTo &&
       (prevFlyTo.current?.lat !== flyTo.lat || prevFlyTo.current?.lng !== flyTo.lng)
     ) {
-      map.flyTo([flyTo.lat, flyTo.lng], 14, { duration: 1.2 })
+      const prefersReducedMotion =
+        typeof window !== 'undefined' &&
+        window.matchMedia('(prefers-reduced-motion: reduce)').matches
+      if (prefersReducedMotion) {
+        map.setView([flyTo.lat, flyTo.lng], 14)
+      } else {
+        map.flyTo([flyTo.lat, flyTo.lng], 14, { duration: 1.2 })
+      }
       prevFlyTo.current = flyTo
     }
   }, [flyTo, map])
@@ -58,87 +69,130 @@ function FlyController({ flyTo }: FlyControllerProps) {
   return null
 }
 
+function CountyBoundariesLayer({ enabled }: { enabled: boolean }) {
+  const [data, setData] = useState<GeoJsonObject | null>(null)
+
+  useEffect(() => {
+    if (!enabled || data) return
+    fetch('/data/counties-roi.geojson')
+      .then((res) => (res.ok ? res.json() : null))
+      .then((json) => {
+        if (json) setData(json as GeoJsonObject)
+      })
+      .catch(() => {})
+  }, [enabled, data])
+
+  if (!enabled || !data) return null
+
+  return (
+    <GeoJSON
+      data={data}
+      style={{
+        color: 'rgba(196, 148, 58, 0.55)',
+        weight: 1,
+        fillOpacity: 0,
+      }}
+    />
+  )
+}
+
 interface MapViewProps {
   trees: Tree[]
   selectedId: string | null
   flyTo: { lat: number; lng: number } | null
   onSelectTree: (tree: Tree) => void
+  showCountyBoundaries: boolean
 }
 
-export default function MapView({ trees, selectedId, flyTo, onSelectTree }: MapViewProps) {
+export default function MapView({
+  trees,
+  selectedId,
+  flyTo,
+  onSelectTree,
+  showCountyBoundaries,
+}: MapViewProps) {
+  const basemap = getBasemapConfig()
+
   return (
     <MapContainer
       center={[53.4, -7.9]}
       zoom={7}
+      className={basemap.containerClassName}
       style={{ height: '100%', width: '100%' }}
       zoomControl={true}
     >
-      <TileLayer
-        attribution='&copy; <a href="https://carto.com/">CARTO</a>'
-        url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
-      />
+      <TileLayer attribution={basemap.attribution} url={basemap.url} />
       <FlyController flyTo={flyTo} />
-      {trees.map((tree) => {
-        const isSelected = selectedId === tree.id
-        const color = getBroadTypeColor(tree.broadType)
-        return (
-          <CircleMarker
-            key={tree.id}
-            center={[tree.lat, tree.lng]}
-            radius={isSelected ? 10 : 6}
-            pathOptions={{
-              fillColor: color,
-              fillOpacity: isSelected ? 1 : 0.82,
-              color: isSelected ? '#F5F0E8' : 'rgba(255,255,255,0.4)',
-              weight: isSelected ? 2 : 1,
-            }}
-            eventHandlers={{ click: () => onSelectTree(tree) }}
-          >
-            <Popup>
-              <div style={{ fontFamily: 'Georgia, serif', minWidth: 200 }}>
-                <div
-                  style={{
-                    fontWeight: 'bold',
-                    fontSize: '1rem',
-                    color: '#F5F0E8',
-                    marginBottom: 4,
-                  }}
-                >
-                  {tree.commonName || tree.taxonName || 'Unknown'}
-                </div>
-                {tree.taxonName && tree.taxonName !== tree.commonName && (
+      <CountyBoundariesLayer enabled={showCountyBoundaries} />
+      <MarkerClusterGroup chunkedLoading maxClusterRadius={40}>
+        {trees.map((tree) => {
+          const isSelected = selectedId === tree.id
+          const color = getBroadTypeColor(tree.broadType)
+          const placementNote = placementPopupNote(tree)
+          return (
+            <CircleMarker
+              key={tree.id}
+              center={[tree.lat, tree.lng]}
+              radius={isSelected ? 10 : 6}
+              pathOptions={{
+                fillColor: color,
+                fillOpacity: isSelected ? 1 : 0.82,
+                color: isSelected ? '#F5F0E8' : 'rgba(255,255,255,0.4)',
+                weight: isSelected ? 2 : 1,
+              }}
+              eventHandlers={{ click: () => onSelectTree(tree) }}
+            >
+              <Popup>
+                <div style={{ fontFamily: 'Georgia, serif', minWidth: 200 }}>
                   <div
                     style={{
-                      fontStyle: 'italic',
-                      fontSize: '0.8rem',
-                      color: '#C4943A',
-                      marginBottom: 6,
+                      fontWeight: 'bold',
+                      fontSize: '1rem',
+                      color: '#F5F0E8',
+                      marginBottom: 4,
                     }}
                   >
-                    {tree.taxonName}
+                    {tree.commonName || tree.taxonName || 'Unknown'}
                   </div>
-                )}
-                <div style={{ fontSize: '0.8rem', color: '#b8cfb8', marginBottom: 2 }}>
-                  Site: {tree.siteName || 'Unknown site'}
-                </div>
-                <div style={{ fontSize: '0.8rem', color: '#b8cfb8', marginBottom: 2 }}>
-                  County: {tree.county}
-                </div>
-                {tree.ageRange && (
+                  {tree.taxonName && tree.taxonName !== tree.commonName && (
+                    <div
+                      style={{
+                        fontStyle: 'italic',
+                        fontSize: '0.8rem',
+                        color: '#C4943A',
+                        marginBottom: 6,
+                      }}
+                    >
+                      {tree.taxonName}
+                    </div>
+                  )}
                   <div style={{ fontSize: '0.8rem', color: '#b8cfb8', marginBottom: 2 }}>
-                    Age: {tree.ageRange}
+                    Site: {tree.siteName || 'Unknown site'}
+                  </div>
+                  <div style={{ fontSize: '0.8rem', color: '#b8cfb8', marginBottom: 2 }}>
+                    County: {tree.county}
+                  </div>
+                {placementNote && (
+                  <div
+                    style={{
+                      fontSize: '0.75rem',
+                      color: '#C4943A',
+                      marginTop: 8,
+                      lineHeight: 1.35,
+                    }}
+                  >
+                    {placementNote}
                   </div>
                 )}
-                {tree.condition && (
-                  <div style={{ fontSize: '0.8rem', color: '#b8cfb8' }}>
-                    Condition: {tree.condition}
-                  </div>
-                )}
-              </div>
-            </Popup>
-          </CircleMarker>
-        )
-      })}
+                <div style={{ fontSize: '0.7rem', color: '#b8cfb8', marginTop: 8, opacity: 0.85 }}>
+                  Open the sidebar for full heritage details.
+                </div>
+                </div>
+              </Popup>
+            </CircleMarker>
+          )
+        })}
+      </MarkerClusterGroup>
     </MapContainer>
   )
 }

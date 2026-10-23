@@ -10,24 +10,36 @@
     "data:build": "python3 scripts/convert_csv_to_json.py",
     "data:audit": "node scripts/audit_tree_coordinates.mjs",
     "data:repair": "node scripts/repair_tree_coordinates.mjs",
-    "typecheck": "tsc --noEmit"
+    "data:verify-counties": "node scripts/verify_county_placements.mjs",
+    "data:apply-placement": "node scripts/apply_placement_metadata.mjs",
+    "data:backfill-coords": "node scripts/backfill_missing_coordinates.mjs",
+    "typecheck": "tsc --noEmit",
+    "test:e2e": "playwright test",
+    "data:simplify-counties": "node scripts/simplify_counties_geojson.mjs"
   },
   "dependencies": {
+    "@tanstack/react-virtual": "^3.13.12",
     "leaflet": "^1.9.4",
+    "leaflet.markercluster": "^1.5.3",
     "next": "14.2.35",
     "react": "^18",
     "react-dom": "^18",
-    "react-leaflet": "^4.2.1"
+    "react-leaflet": "^4.2.1",
+    "react-leaflet-cluster": "^2.1.0"
   },
   "devDependencies": {
+    "@types/geojson": "^7946.0.16",
     "@types/leaflet": "^1.9.21",
+    "@types/leaflet.markercluster": "^1.5.5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@playwright/test": "^1.56.1",
     "autoprefixer": "^10.0.1",
     "eslint": "^8",
     "eslint-config-next": "14.2.35",
     "postcss": "^8.5.6",
+    "proj4": "^2.19.10",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
   }
