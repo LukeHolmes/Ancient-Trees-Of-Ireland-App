@@ -1,10 +1,11 @@
 'use client'
 
-import { useState, useCallback } from 'react'
+import { useState, useCallback, useMemo } from 'react'
 import dynamic from 'next/dynamic'
-import type { Tree } from '@/types/tree'
+import type { Tree, TreeRecord } from '@/types/tree'
 import type { Filters } from '@/types/filters'
 import { DEFAULT_FILTERS } from '@/types/filters'
+import { isMappableRecord } from '@/lib/trees'
 import Header from '@/components/Header'
 import StatsBar from '@/components/StatsBar'
 import FilterPanel from '@/components/FilterPanel'
@@ -13,27 +14,42 @@ import TreeList from '@/components/TreeList'
 const MapView = dynamic(() => import('@/components/MapView'), { ssr: false })
 
 interface MapAppProps {
-  trees: Tree[]
+  records: TreeRecord[]
+  mappableTrees: Tree[]
+  awaitingCoordinates: number
 }
 
-export default function MapApp({ trees }: MapAppProps) {
+function matchesFilters(record: TreeRecord, filters: Filters): boolean {
+  if (filters.counties.length > 0 && !filters.counties.includes(record.county)) return false
+  if (filters.broadTypes.length > 0 && !filters.broadTypes.includes(record.broadType)) return false
+  if (filters.commonNames.length > 0 && !filters.commonNames.includes(record.commonName)) return false
+  if (filters.ageRanges.length > 0 && !filters.ageRanges.includes(record.ageRange)) return false
+  if (filters.condition && record.condition !== filters.condition) return false
+  if (filters.mappableOnly && !isMappableRecord(record)) return false
+  return true
+}
+
+export default function MapApp({ records, mappableTrees, awaitingCoordinates }: MapAppProps) {
   const [filters, setFilters] = useState<Filters>(DEFAULT_FILTERS)
   const [selectedId, setSelectedId] = useState<string | null>(null)
   const [flyTo, setFlyTo] = useState<{ lat: number; lng: number } | null>(null)
   const [sidebarOpen, setSidebarOpen] = useState(false)
 
-  const filtered = trees.filter((t) => {
-    if (filters.counties.length > 0 && !filters.counties.includes(t.county)) return false
-    if (filters.broadTypes.length > 0 && !filters.broadTypes.includes(t.broadType)) return false
-    if (filters.commonNames.length > 0 && !filters.commonNames.includes(t.commonName)) return false
-    if (filters.ageRanges.length > 0 && !filters.ageRanges.includes(t.ageRange)) return false
-    if (filters.condition && t.condition !== filters.condition) return false
-    return true
-  })
+  const filteredRecords = useMemo(
+    () => records.filter((t) => matchesFilters(t, filters)),
+    [records, filters]
+  )
 
-  const handleSelectTree = useCallback((tree: Tree) => {
+  const filteredMappable = useMemo(() => {
+    const ids = new Set(filteredRecords.map((r) => r.id))
+    return mappableTrees.filter((t) => ids.has(t.id))
+  }, [filteredRecords, mappableTrees])
+
+  const handleSelectTree = useCallback((tree: TreeRecord) => {
     setSelectedId(tree.id)
-    setFlyTo({ lat: tree.lat, lng: tree.lng })
+    if (isMappableRecord(tree)) {
+      setFlyTo({ lat: tree.lat, lng: tree.lng })
+    }
   }, [])
 
   return (
@@ -57,27 +73,37 @@ export default function MapApp({ trees }: MapAppProps) {
           borderRight: '1px solid rgba(196, 148, 58, 0.2)',
         }}
       >
-        <Header totalCount={trees.length} />
-        <StatsBar trees={filtered} />
+        <Header totalCount={records.length} />
+        <StatsBar
+          filteredCount={filteredRecords.length}
+          filteredMappableCount={filteredMappable.length}
+          totalMappable={mappableTrees.length}
+          awaitingCoordinates={awaitingCoordinates}
+        />
 
         <div className="flex-1 flex flex-col min-h-0 overflow-hidden">
           <div className="px-4 pt-4 flex-shrink-0">
-            <FilterPanel trees={trees} filters={filters} onChange={setFilters} />
+            <FilterPanel records={records} filters={filters} onChange={setFilters} />
           </div>
           <div
             className="mx-4 my-3 flex-shrink-0"
             style={{ height: '1px', background: 'rgba(196, 148, 58, 0.15)' }}
           />
-          <TreeList trees={filtered} selectedId={selectedId} onSelect={handleSelectTree} />
+          <TreeList
+            records={filteredRecords}
+            selectedId={selectedId}
+            onSelect={handleSelectTree}
+          />
         </div>
       </aside>
 
       <main className="flex-1 relative">
         <MapView
-          trees={filtered}
+          trees={filteredMappable}
           selectedId={selectedId}
           flyTo={flyTo}
           onSelectTree={handleSelectTree}
+          showCountyBoundaries={filters.showCountyBoundaries}
         />
 
         <button

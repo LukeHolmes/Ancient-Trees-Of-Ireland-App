@@ -4,6 +4,9 @@ export interface Filters {
   commonNames: string[]
   ageRanges: string[]
   condition: string
+  /** When true, hide records without map coordinates from the results list */
+  mappableOnly: boolean
+  showCountyBoundaries: boolean
 }
 
 export const DEFAULT_FILTERS: Filters = {
@@ -12,4 +15,6 @@ export const DEFAULT_FILTERS: Filters = {
   commonNames: [],
   ageRanges: [],
   condition: '',
+  mappableOnly: true,
+  showCountyBoundaries: false,
 }

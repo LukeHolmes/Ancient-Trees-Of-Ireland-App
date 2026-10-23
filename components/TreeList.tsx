@@ -1,15 +1,17 @@
 'use client'
 
-import type { Tree } from '@/types/tree'
+import type { TreeRecord } from '@/types/tree'
+import { isMappableRecord } from '@/lib/trees'
+import PlacementBadge from '@/components/PlacementBadge'
 
 interface TreeListProps {
-  trees: Tree[]
+  records: TreeRecord[]
   selectedId: string | null
-  onSelect: (tree: Tree) => void
+  onSelect: (tree: TreeRecord) => void
 }
 
-export default function TreeList({ trees, selectedId, onSelect }: TreeListProps) {
-  const displayed = trees.slice(0, 50)
+export default function TreeList({ records, selectedId, onSelect }: TreeListProps) {
+  const displayed = records.slice(0, 50)
 
   return (
     <div className="flex flex-col flex-1 min-h-0">
@@ -24,7 +26,7 @@ export default function TreeList({ trees, selectedId, onSelect }: TreeListProps)
           Results
         </span>
         <span className="text-[10px] text-parchment/40">
-          {trees.length > 50 ? `Showing 50 of ${trees.length}` : `${trees.length} trees`}
+          {records.length > 50 ? `Showing 50 of ${records.length}` : `${records.length} trees`}
         </span>
       </div>
 
@@ -36,79 +38,91 @@ export default function TreeList({ trees, selectedId, onSelect }: TreeListProps)
             <p className="text-xs text-parchment/30 mt-1">Try clearing some filters.</p>
           </div>
         ) : (
-          displayed.map((tree) => (
-            <button
-              key={tree.id}
-              onClick={() => onSelect(tree)}
-              className="w-full text-left px-4 py-3 transition-all duration-150"
-              style={{
-                borderBottom: '1px solid rgba(196, 148, 58, 0.08)',
-                background:
-                  selectedId === tree.id
-                    ? 'rgba(196, 148, 58, 0.12)'
-                    : 'transparent',
-                borderLeft:
-                  selectedId === tree.id
-                    ? '3px solid #C4943A'
-                    : '3px solid transparent',
-              }}
-              onMouseEnter={(e) => {
-                if (selectedId !== tree.id) {
-                  e.currentTarget.style.background = 'rgba(45, 106, 79, 0.2)'
-                }
-              }}
-              onMouseLeave={(e) => {
-                if (selectedId !== tree.id) {
-                  e.currentTarget.style.background = 'transparent'
-                }
-              }}
-            >
-              <div className="flex items-start justify-between gap-2">
-                <div className="min-w-0 flex-1">
-                  <div
-                    className="font-bold text-sm text-parchment leading-tight truncate"
-                    style={{ fontFamily: 'var(--font-playfair)' }}
-                  >
-                    {tree.commonName || tree.taxonName || 'Unknown Tree'}
+          displayed.map((tree) => {
+            const mappable = isMappableRecord(tree)
+            return (
+              <button
+                key={tree.id}
+                type="button"
+                disabled={!mappable}
+                onClick={() => onSelect(tree)}
+                className="w-full text-left px-4 py-3 transition-all duration-150 disabled:opacity-70"
+                style={{
+                  borderBottom: '1px solid rgba(196, 148, 58, 0.08)',
+                  background:
+                    selectedId === tree.id
+                      ? 'rgba(196, 148, 58, 0.12)'
+                      : 'transparent',
+                  borderLeft:
+                    selectedId === tree.id
+                      ? '3px solid #C4943A'
+                      : '3px solid transparent',
+                  cursor: mappable ? 'pointer' : 'default',
+                }}
+                onMouseEnter={(e) => {
+                  if (selectedId !== tree.id && mappable) {
+                    e.currentTarget.style.background = 'rgba(45, 106, 79, 0.2)'
+                  }
+                }}
+                onMouseLeave={(e) => {
+                  if (selectedId !== tree.id) {
+                    e.currentTarget.style.background = 'transparent'
+                  }
+                }}
+              >
+                <div className="flex items-start justify-between gap-2">
+                  <div className="min-w-0 flex-1">
+                    <div className="flex items-center gap-2 flex-wrap">
+                      <div
+                        className="font-bold text-sm text-parchment leading-tight truncate"
+                        style={{ fontFamily: 'var(--font-playfair)' }}
+                      >
+                        {tree.commonName || tree.taxonName || 'Unknown Tree'}
+                      </div>
+                      <PlacementBadge
+                        confidence={tree.placementConfidence}
+                        awaitingCoordinates={!mappable}
+                      />
+                    </div>
+                    {tree.siteName && (
+                      <div
+                        className="text-xs mt-0.5 truncate"
+                        style={{ color: '#C4943A', fontStyle: 'italic' }}
+                      >
+                        {tree.siteName}
+                      </div>
+                    )}
+                    <div className="flex items-center gap-2 mt-1.5 flex-wrap">
+                      {tree.county && (
+                        <span
+                          className="text-[10px] px-2 py-0.5 rounded-full"
+                          style={{
+                            background: 'rgba(45, 106, 79, 0.4)',
+                            border: '1px solid rgba(74, 124, 89, 0.4)',
+                            color: '#F5F0E8',
+                          }}
+                        >
+                          {tree.county}
+                        </span>
+                      )}
+                      {tree.broadType && (
+                        <span className="text-[10px] text-parchment/40 truncate">
+                          {tree.broadType}
+                        </span>
+                      )}
+                    </div>
                   </div>
-                  {tree.siteName && (
-                    <div
-                      className="text-xs mt-0.5 truncate"
-                      style={{ color: '#C4943A', fontStyle: 'italic' }}
-                    >
-                      {tree.siteName}
+                  {tree.ageRange && (
+                    <div className="flex-shrink-0 text-right">
+                      <span className="text-[10px] text-parchment/40 leading-tight block">
+                        {tree.ageRange}
+                      </span>
                     </div>
                   )}
-                  <div className="flex items-center gap-2 mt-1.5 flex-wrap">
-                    {tree.county && (
-                      <span
-                        className="text-[10px] px-2 py-0.5 rounded-full"
-                        style={{
-                          background: 'rgba(45, 106, 79, 0.4)',
-                          border: '1px solid rgba(74, 124, 89, 0.4)',
-                          color: '#F5F0E8',
-                        }}
-                      >
-                        {tree.county}
-                      </span>
-                    )}
-                    {tree.broadType && (
-                      <span className="text-[10px] text-parchment/40 truncate">
-                        {tree.broadType}
-                      </span>
-                    )}
-                  </div>
                 </div>
-                {tree.ageRange && (
-                  <div className="flex-shrink-0 text-right">
-                    <span className="text-[10px] text-parchment/40 leading-tight block">
-                      {tree.ageRange}
-                    </span>
-                  </div>
-                )}
-              </div>
-            </button>
-          ))
+              </button>
+            )
+          })
         )}
       </div>
     </div>

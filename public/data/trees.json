@@ -14,7 +14,10 @@
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
     "evidence": "Significant habitat",
-    "coordinateStatus": "site_geocoded"
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "border",
+    "verifiedAt": "2026-10-23",
+    "geocodeSource": "heritage_register"
   },
   {
     "id": "3",
@@ -31,7 +34,9 @@
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
     "evidence": "Significant habitat",
-    "coordinateStatus": "needs_site_coordinates"
+    "coordinateStatus": "needs_site_coordinates",
+    "placementConfidence": "needs_review",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "4",
@@ -47,7 +52,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "5",
@@ -63,7 +72,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "9",
@@ -80,7 +93,10 @@
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
     "evidence": "",
-    "coordinateStatus": "site_geocoded"
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "10",
@@ -96,7 +112,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "15",
@@ -113,7 +133,10 @@
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
     "evidence": "Holes",
-    "coordinateStatus": "site_geocoded"
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "16",
@@ -130,7 +153,9 @@
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
     "evidence": "",
-    "coordinateStatus": "needs_site_coordinates"
+    "coordinateStatus": "needs_site_coordinates",
+    "placementConfidence": "needs_review",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "21",
@@ -146,7 +171,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": "Hollowing"
+    "evidence": "Hollowing",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "24",
@@ -162,7 +191,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Holes"
+    "evidence": "Holes",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "25",
@@ -178,7 +211,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Holes"
+    "evidence": "Holes",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "27",
@@ -195,7 +232,9 @@
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
     "evidence": "Significant habitat",
-    "coordinateStatus": "needs_site_coordinates"
+    "coordinateStatus": "needs_site_coordinates",
+    "placementConfidence": "needs_review",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "28",
@@ -211,7 +250,11 @@
     "form": "Pollard",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "29",
@@ -227,7 +270,11 @@
     "form": "Pollard",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "30",
@@ -243,7 +290,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "31",
@@ -259,7 +310,11 @@
     "form": "Pollard",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "32",
@@ -275,7 +330,11 @@
     "form": "Pollard",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "34",
@@ -291,7 +350,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "300 - 500 years",
-    "evidence": "Hollowing"
+    "evidence": "Hollowing",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "44",
@@ -308,7 +371,10 @@
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
     "evidence": "Holes",
-    "coordinateStatus": "site_geocoded"
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "45",
@@ -324,7 +390,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Fungi"
+    "evidence": "Fungi",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "46",
@@ -341,7 +411,10 @@
     "condition": "Standing alive",
     "ageRange": "50 - 100 years",
     "evidence": "",
-    "coordinateStatus": "site_geocoded"
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "49",
@@ -357,7 +430,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "50",
@@ -373,7 +450,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "54",
@@ -389,7 +470,11 @@
     "form": "Maiden",
     "condition": "Standing dead",
     "ageRange": "100 - 150 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "55",
@@ -405,7 +490,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "50 - 100 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "57",
@@ -421,7 +510,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "50 - 100 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "60",
@@ -437,7 +530,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": "Hollowing"
+    "evidence": "Hollowing",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "61",
@@ -453,7 +550,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "63",
@@ -469,7 +570,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "65",
@@ -485,7 +590,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "66",
@@ -501,7 +610,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "67",
@@ -517,7 +630,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "71",
@@ -534,7 +651,10 @@
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
     "evidence": "",
-    "coordinateStatus": "site_geocoded"
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "78",
@@ -551,7 +671,10 @@
     "condition": "Standing alive",
     "ageRange": "Not known",
     "evidence": "",
-    "coordinateStatus": "site_geocoded"
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "79",
@@ -568,7 +691,10 @@
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
     "evidence": "",
-    "coordinateStatus": "site_geocoded"
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "80",
@@ -584,7 +710,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": "Holes"
+    "evidence": "Holes",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "82",
@@ -600,7 +730,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "85",
@@ -616,7 +750,11 @@
     "form": "Maiden",
     "condition": "Fallen dead",
     "ageRange": "200 - 300 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "88",
@@ -632,7 +770,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "89",
@@ -648,7 +790,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "91",
@@ -664,7 +810,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Hollowing"
+    "evidence": "Hollowing",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "102",
@@ -680,7 +830,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "105",
@@ -696,7 +850,11 @@
     "form": "Maiden",
     "condition": "Fallen dead",
     "ageRange": "100 - 150 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "109",
@@ -712,7 +870,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "110",
@@ -729,7 +891,9 @@
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
     "evidence": "",
-    "coordinateStatus": "needs_site_coordinates"
+    "coordinateStatus": "needs_site_coordinates",
+    "placementConfidence": "needs_review",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "111",
@@ -746,7 +910,9 @@
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
     "evidence": "",
-    "coordinateStatus": "needs_site_coordinates"
+    "coordinateStatus": "needs_site_coordinates",
+    "placementConfidence": "needs_review",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "112",
@@ -763,7 +929,9 @@
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
     "evidence": "",
-    "coordinateStatus": "needs_site_coordinates"
+    "coordinateStatus": "needs_site_coordinates",
+    "placementConfidence": "needs_review",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "113",
@@ -779,7 +947,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "116",
@@ -795,7 +967,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "118",
@@ -811,7 +987,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "123",
@@ -827,7 +1007,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "127",
@@ -843,7 +1027,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "128",
@@ -859,7 +1047,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "50 - 100 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "129",
@@ -875,7 +1067,11 @@
     "form": "Multi-stem",
     "condition": "Standing alive",
     "ageRange": "0 - 50 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "130",
@@ -891,7 +1087,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "131",
@@ -907,7 +1107,11 @@
     "form": "Multi-stem",
     "condition": "Standing alive",
     "ageRange": "50 - 100 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "132",
@@ -924,7 +1128,9 @@
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
     "evidence": "",
-    "coordinateStatus": "needs_site_coordinates"
+    "coordinateStatus": "needs_site_coordinates",
+    "placementConfidence": "needs_review",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "133",
@@ -940,7 +1146,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "300 - 500 years",
-    "evidence": "Holes"
+    "evidence": "Holes",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "134",
@@ -956,7 +1166,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "139",
@@ -972,7 +1186,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "0 - 50 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "140",
@@ -988,7 +1206,11 @@
     "form": "Multi-stem",
     "condition": "Standing alive",
     "ageRange": "0 - 50 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "142",
@@ -1004,7 +1226,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": "Hollowing"
+    "evidence": "Hollowing",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "144",
@@ -1020,7 +1246,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "145",
@@ -1036,7 +1266,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "50 - 100 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "146",
@@ -1052,7 +1286,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "0 - 50 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "148",
@@ -1068,7 +1306,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "149",
@@ -1084,7 +1326,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "151",
@@ -1100,7 +1346,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "152",
@@ -1116,7 +1366,11 @@
     "form": "Multi-stem",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "158",
@@ -1132,7 +1386,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "50 - 100 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "161",
@@ -1149,7 +1407,10 @@
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
     "evidence": "Significant habitat",
-    "coordinateStatus": "site_geocoded"
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "border",
+    "verifiedAt": "2026-10-23",
+    "geocodeSource": "heritage_register"
   },
   {
     "id": "169",
@@ -1166,7 +1427,9 @@
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
     "evidence": "",
-    "coordinateStatus": "needs_site_coordinates"
+    "coordinateStatus": "needs_site_coordinates",
+    "placementConfidence": "needs_review",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "172",
@@ -1182,7 +1445,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "178",
@@ -1198,7 +1465,11 @@
     "form": "Multi-stem",
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "179",
@@ -1214,7 +1485,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "50 - 100 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "181",
@@ -1230,7 +1505,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "182",
@@ -1246,7 +1525,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "190",
@@ -1262,7 +1545,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "300 - 500 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "191",
@@ -1278,7 +1565,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "197",
@@ -1294,7 +1585,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": "Holes"
+    "evidence": "Holes",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "198",
@@ -1310,7 +1605,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "50 - 100 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "199",
@@ -1326,7 +1625,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Fungi"
+    "evidence": "Fungi",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "200",
@@ -1342,7 +1645,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "201",
@@ -1358,7 +1665,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "203",
@@ -1374,7 +1685,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "205",
@@ -1390,7 +1705,11 @@
     "form": "Pollard",
     "condition": "Fallen",
     "ageRange": "200 - 300 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "206",
@@ -1406,7 +1725,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "207",
@@ -1422,7 +1745,11 @@
     "form": "Pollard",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "208",
@@ -1438,7 +1765,11 @@
     "form": "Multi-stem",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": "Fungi"
+    "evidence": "Fungi",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "210",
@@ -1455,7 +1786,9 @@
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
     "evidence": "Significant habitat",
-    "coordinateStatus": "needs_site_coordinates"
+    "coordinateStatus": "needs_site_coordinates",
+    "placementConfidence": "needs_review",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "211",
@@ -1472,7 +1805,10 @@
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
     "evidence": "",
-    "coordinateStatus": "site_geocoded"
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "213",
@@ -1488,7 +1824,11 @@
     "form": "Group",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "216",
@@ -1504,7 +1844,11 @@
     "form": "Group",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "218",
@@ -1520,7 +1864,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "219",
@@ -1536,7 +1884,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "220",
@@ -1552,7 +1904,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "221",
@@ -1568,7 +1924,11 @@
     "form": "Maiden",
     "condition": "Standing dead",
     "ageRange": "150 - 200 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "222",
@@ -1585,7 +1945,10 @@
     "condition": "Standing alive",
     "ageRange": "50 - 100 years",
     "evidence": "",
-    "coordinateStatus": "site_geocoded"
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "223",
@@ -1601,7 +1964,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "224",
@@ -1617,7 +1984,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": "Holes"
+    "evidence": "Holes",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "225",
@@ -1633,7 +2004,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": "Fungi"
+    "evidence": "Fungi",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "226",
@@ -1650,7 +2025,9 @@
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
     "evidence": "Significant habitat",
-    "coordinateStatus": "needs_site_coordinates"
+    "coordinateStatus": "needs_site_coordinates",
+    "placementConfidence": "needs_review",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "227",
@@ -1666,7 +2043,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "228",
@@ -1682,7 +2063,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Holes"
+    "evidence": "Holes",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "230",
@@ -1698,7 +2083,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "234",
@@ -1714,7 +2103,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Hollowing"
+    "evidence": "Hollowing",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "236",
@@ -1730,7 +2123,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Hollowing"
+    "evidence": "Hollowing",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "237",
@@ -1746,7 +2143,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "240",
@@ -1762,7 +2163,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "241",
@@ -1778,7 +2183,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "245",
@@ -1794,7 +2203,11 @@
     "form": "Maiden",
     "condition": "Dead",
     "ageRange": "200 - 300 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "246",
@@ -1810,7 +2223,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": "Holes"
+    "evidence": "Holes",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "247",
@@ -1826,7 +2243,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Hollowing"
+    "evidence": "Hollowing",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "252",
@@ -1842,7 +2263,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": "Holes"
+    "evidence": "Holes",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "254",
@@ -1859,7 +2284,9 @@
     "condition": "Standing alive",
     "ageRange": "50 - 100 years",
     "evidence": "",
-    "coordinateStatus": "needs_site_coordinates"
+    "coordinateStatus": "needs_site_coordinates",
+    "placementConfidence": "needs_review",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "255",
@@ -1876,7 +2303,9 @@
     "condition": "Not Recorded",
     "ageRange": "150 - 200 years",
     "evidence": "",
-    "coordinateStatus": "needs_site_coordinates"
+    "coordinateStatus": "needs_site_coordinates",
+    "placementConfidence": "needs_review",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "258",
@@ -1892,7 +2321,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": "Holes"
+    "evidence": "Holes",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "259",
@@ -1908,7 +2341,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Hollowing"
+    "evidence": "Hollowing",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "261",
@@ -1924,7 +2361,11 @@
     "form": "Maiden",
     "condition": "Standing dead",
     "ageRange": "200 - 300 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "263",
@@ -1940,7 +2381,11 @@
     "form": "Multi-stem",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": "Hollowing"
+    "evidence": "Hollowing",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "266",
@@ -1956,7 +2401,11 @@
     "form": "Pollard",
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
-    "evidence": "Hollowing"
+    "evidence": "Hollowing",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "267",
@@ -1972,7 +2421,11 @@
     "form": "Coppice",
     "condition": "Standing alive",
     "ageRange": "Not known",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "269",
@@ -1988,7 +2441,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Holes"
+    "evidence": "Holes",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "274",
@@ -2005,7 +2462,9 @@
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
     "evidence": "Significant habitat",
-    "coordinateStatus": "needs_site_coordinates"
+    "coordinateStatus": "needs_site_coordinates",
+    "placementConfidence": "needs_review",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "276",
@@ -2022,7 +2481,10 @@
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
     "evidence": "Significant habitat",
-    "coordinateStatus": "site_geocoded"
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "279",
@@ -2039,7 +2501,9 @@
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
     "evidence": "Significant habitat",
-    "coordinateStatus": "needs_site_coordinates"
+    "coordinateStatus": "needs_site_coordinates",
+    "placementConfidence": "needs_review",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "280",
@@ -2055,7 +2519,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "282",
@@ -2071,7 +2539,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "300 - 500 years",
-    "evidence": "Hollowing"
+    "evidence": "Hollowing",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "283",
@@ -2087,7 +2559,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "284",
@@ -2104,7 +2580,9 @@
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
     "evidence": "",
-    "coordinateStatus": "needs_site_coordinates"
+    "coordinateStatus": "needs_site_coordinates",
+    "placementConfidence": "needs_review",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "286",
@@ -2120,7 +2598,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "294",
@@ -2136,7 +2618,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "295",
@@ -2152,7 +2638,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "302",
@@ -2168,7 +2658,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "304",
@@ -2184,7 +2678,11 @@
     "form": "Multi-stem",
     "condition": "Standing alive",
     "ageRange": "50 - 100 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "305",
@@ -2200,7 +2698,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "50 - 100 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "307",
@@ -2216,7 +2718,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "317",
@@ -2232,7 +2738,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "300 - 500 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "321",
@@ -2248,7 +2758,11 @@
     "form": "Multi-stem",
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "322",
@@ -2265,7 +2779,9 @@
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
     "evidence": "",
-    "coordinateStatus": "needs_site_coordinates"
+    "coordinateStatus": "needs_site_coordinates",
+    "placementConfidence": "needs_review",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "323",
@@ -2282,7 +2798,9 @@
     "condition": "Fallen alive",
     "ageRange": "150 - 200 years",
     "evidence": "",
-    "coordinateStatus": "needs_site_coordinates"
+    "coordinateStatus": "needs_site_coordinates",
+    "placementConfidence": "needs_review",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "328",
@@ -2298,7 +2816,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "335",
@@ -2314,7 +2836,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "336",
@@ -2330,7 +2856,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "337",
@@ -2346,7 +2876,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "338",
@@ -2362,7 +2896,11 @@
     "form": "Pollard",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "345",
@@ -2379,7 +2917,9 @@
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
     "evidence": "Significant habitat",
-    "coordinateStatus": "needs_site_coordinates"
+    "coordinateStatus": "needs_site_coordinates",
+    "placementConfidence": "needs_review",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "350",
@@ -2395,7 +2935,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Hollowing"
+    "evidence": "Hollowing",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "352",
@@ -2411,7 +2955,11 @@
     "form": "",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "354",
@@ -2427,7 +2975,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "50 - 100 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "355",
@@ -2444,7 +2996,10 @@
     "condition": "Standing alive",
     "ageRange": "50 - 100 years",
     "evidence": "",
-    "coordinateStatus": "site_geocoded"
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "357",
@@ -2460,7 +3015,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "50 - 100 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "361",
@@ -2476,7 +3035,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "50 - 100 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "367",
@@ -2492,7 +3055,11 @@
     "form": "Multi-stem",
     "condition": "Fallen alive",
     "ageRange": "150 - 200 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "370",
@@ -2508,7 +3075,11 @@
     "form": "Multi-stem",
     "condition": "Fallen alive",
     "ageRange": "100 - 150 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "372",
@@ -2524,7 +3095,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "50 - 100 years",
-    "evidence": "Hollowing"
+    "evidence": "Hollowing",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "373",
@@ -2540,7 +3115,11 @@
     "form": "Multi-stem",
     "condition": "Standing alive",
     "ageRange": "50 - 100 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "379",
@@ -2556,7 +3135,11 @@
     "form": "Multi-stem",
     "condition": "Standing alive",
     "ageRange": "50 - 100 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "383",
@@ -2572,7 +3155,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "384",
@@ -2588,7 +3175,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "0 - 50 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "387",
@@ -2604,7 +3195,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "391",
@@ -2620,7 +3215,11 @@
     "form": "Group",
     "condition": "Standing alive",
     "ageRange": "50 - 100 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "392",
@@ -2636,7 +3235,11 @@
     "form": "Multi-stem",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "396",
@@ -2653,7 +3256,9 @@
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
     "evidence": "Hollowing",
-    "coordinateStatus": "needs_site_coordinates"
+    "coordinateStatus": "needs_site_coordinates",
+    "placementConfidence": "needs_review",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "397",
@@ -2670,7 +3275,9 @@
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
     "evidence": "Hollowing",
-    "coordinateStatus": "needs_site_coordinates"
+    "coordinateStatus": "needs_site_coordinates",
+    "placementConfidence": "needs_review",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "400",
@@ -2686,7 +3293,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "50 - 100 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "401",
@@ -2702,7 +3313,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "402",
@@ -2718,7 +3333,11 @@
     "form": "Maiden",
     "condition": "Standing dead",
     "ageRange": "150 - 200 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "407",
@@ -2735,7 +3354,9 @@
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
     "evidence": "Significant habitat",
-    "coordinateStatus": "needs_site_coordinates"
+    "coordinateStatus": "needs_site_coordinates",
+    "placementConfidence": "needs_review",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "413",
@@ -2751,7 +3372,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "50 - 100 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "414",
@@ -2767,7 +3392,11 @@
     "form": "Multi-stem",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "415",
@@ -2783,7 +3412,11 @@
     "form": "Colony",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "424",
@@ -2800,12 +3433,14 @@
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
     "evidence": "",
-    "coordinateStatus": "needs_site_coordinates"
+    "coordinateStatus": "needs_site_coordinates",
+    "placementConfidence": "needs_review",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "425",
-    "lat": null,
-    "lng": null,
+    "lat": 54.0624204,
+    "lng": -7.6865018,
     "commonName": "Black Poplar",
     "taxonName": "Populus nigra",
     "siteName": "Ballymagauran, Co. Leitrim",
@@ -2817,7 +3452,10 @@
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
     "evidence": "Hollowing",
-    "coordinateStatus": "needs_site_coordinates"
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "needs_review",
+    "verifiedAt": "2026-10-23",
+    "geocodeSource": "nominatim"
   },
   {
     "id": "430",
@@ -2834,7 +3472,10 @@
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
     "evidence": "",
-    "coordinateStatus": "site_geocoded"
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "433",
@@ -2850,7 +3491,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "437",
@@ -2866,7 +3511,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "448",
@@ -2882,7 +3531,11 @@
     "form": "Multi-stem",
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "449",
@@ -2898,7 +3551,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "453",
@@ -2915,7 +3572,10 @@
     "condition": "Standing alive",
     "ageRange": "50 - 100 years",
     "evidence": "Significant habitat",
-    "coordinateStatus": "site_geocoded"
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "458",
@@ -2931,7 +3591,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "459",
@@ -2947,7 +3611,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "462",
@@ -2963,7 +3631,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "463",
@@ -2979,7 +3651,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "466",
@@ -2995,7 +3671,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "300 - 500 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "468",
@@ -3011,7 +3691,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Holes"
+    "evidence": "Holes",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "469",
@@ -3027,7 +3711,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Holes"
+    "evidence": "Holes",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "470",
@@ -3043,7 +3731,11 @@
     "form": "Pollard",
     "condition": "Standing alive",
     "ageRange": "300 - 500 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "472",
@@ -3059,7 +3751,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "473",
@@ -3075,7 +3771,11 @@
     "form": "Pollard",
     "condition": "Standing alive",
     "ageRange": "300 - 500 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "474",
@@ -3091,7 +3791,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Fungi"
+    "evidence": "Fungi",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "475",
@@ -3108,7 +3812,9 @@
     "condition": "Standing alive",
     "ageRange": "300 - 500 years",
     "evidence": "Fungi",
-    "coordinateStatus": "needs_site_coordinates"
+    "coordinateStatus": "needs_site_coordinates",
+    "placementConfidence": "needs_review",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "476",
@@ -3124,7 +3830,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Holes"
+    "evidence": "Holes",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "480",
@@ -3140,7 +3850,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "481",
@@ -3156,7 +3870,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "300 - 500 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "485",
@@ -3172,7 +3890,11 @@
     "form": "Pollard",
     "condition": "Standing alive",
     "ageRange": "300 - 500 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "486",
@@ -3188,7 +3910,11 @@
     "form": "Pollard",
     "condition": "Standing alive",
     "ageRange": "300 - 500 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "487",
@@ -3204,7 +3930,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "489",
@@ -3220,7 +3950,10 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "300 - 500 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "placementConfidence": "needs_review",
+    "verifiedAt": "2026-10-23",
+    "geocodeSource": "heritage_register"
   },
   {
     "id": "493",
@@ -3236,7 +3969,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "500",
@@ -3252,7 +3989,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "300 - 500 years",
-    "evidence": "Hollowing"
+    "evidence": "Hollowing",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "501",
@@ -3268,7 +4009,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "502",
@@ -3284,7 +4029,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Holes"
+    "evidence": "Holes",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "503",
@@ -3300,7 +4049,11 @@
     "form": "Maiden",
     "condition": "Not Recorded",
     "ageRange": "300 - 500 years",
-    "evidence": "Hollowing"
+    "evidence": "Hollowing",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "505",
@@ -3316,7 +4069,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "506",
@@ -3332,7 +4089,11 @@
     "form": "Maiden",
     "condition": "Standing dead",
     "ageRange": "200 - 300 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "507",
@@ -3349,7 +4110,9 @@
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
     "evidence": "Significant habitat",
-    "coordinateStatus": "needs_site_coordinates"
+    "coordinateStatus": "needs_site_coordinates",
+    "placementConfidence": "needs_review",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "508",
@@ -3366,7 +4129,10 @@
     "condition": "Standing alive",
     "ageRange": "300 - 500 years",
     "evidence": "Significant habitat",
-    "coordinateStatus": "site_geocoded"
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "511",
@@ -3382,7 +4148,11 @@
     "form": "Pollard",
     "condition": "Standing alive",
     "ageRange": "300 - 500 years",
-    "evidence": "Holes"
+    "evidence": "Holes",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "512",
@@ -3398,7 +4168,11 @@
     "form": "Pollard",
     "condition": "Standing alive",
     "ageRange": "300 - 500 years",
-    "evidence": "Hollowing"
+    "evidence": "Hollowing",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "513",
@@ -3414,7 +4188,11 @@
     "form": "Pollard",
     "condition": "Standing alive",
     "ageRange": "300 - 500 years",
-    "evidence": "Hollowing"
+    "evidence": "Hollowing",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "514",
@@ -3430,7 +4208,11 @@
     "form": "Pollard",
     "condition": "Standing alive",
     "ageRange": "300 - 500 years",
-    "evidence": "Hollowing"
+    "evidence": "Hollowing",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "515",
@@ -3446,7 +4228,11 @@
     "form": "Pollard",
     "condition": "Standing alive",
     "ageRange": "300 - 500 years",
-    "evidence": "Hollowing"
+    "evidence": "Hollowing",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "520",
@@ -3462,7 +4248,11 @@
     "form": "Pollard",
     "condition": "Standing alive",
     "ageRange": "300 - 500 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "525",
@@ -3478,7 +4268,11 @@
     "form": "Pollard",
     "condition": "Standing alive",
     "ageRange": "300 - 500 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "528",
@@ -3494,7 +4288,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "529",
@@ -3510,7 +4308,11 @@
     "form": "Pollard",
     "condition": "Standing alive",
     "ageRange": "300 - 500 years",
-    "evidence": "Hollowing"
+    "evidence": "Hollowing",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "539",
@@ -3527,7 +4329,10 @@
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
     "evidence": "Hollowing",
-    "coordinateStatus": "site_geocoded"
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "542",
@@ -3543,7 +4348,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "543",
@@ -3559,7 +4368,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "50 - 100 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "545",
@@ -3575,7 +4388,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "548",
@@ -3591,7 +4408,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "551",
@@ -3607,7 +4428,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "552",
@@ -3623,7 +4448,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "555",
@@ -3639,7 +4468,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "556",
@@ -3655,7 +4488,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "562",
@@ -3671,7 +4508,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "563",
@@ -3687,7 +4528,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "564",
@@ -3703,7 +4548,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "569",
@@ -3720,7 +4569,9 @@
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
     "evidence": "Significant habitat",
-    "coordinateStatus": "needs_site_coordinates"
+    "coordinateStatus": "needs_site_coordinates",
+    "placementConfidence": "needs_review",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "570",
@@ -3736,7 +4587,11 @@
     "form": "Multi-stem",
     "condition": "Standing alive",
     "ageRange": "50 - 100 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "579",
@@ -3752,7 +4607,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "50 - 100 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "584",
@@ -3768,7 +4627,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "585",
@@ -3784,7 +4647,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "586",
@@ -3800,7 +4667,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "300 - 500 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "587",
@@ -3816,7 +4687,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "300 - 500 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "591",
@@ -3832,7 +4707,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "592",
@@ -3848,7 +4727,11 @@
     "form": "Multi-stem",
     "condition": "Standing alive",
     "ageRange": "300 - 500 years",
-    "evidence": "Holes"
+    "evidence": "Holes",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "594",
@@ -3864,7 +4747,11 @@
     "form": "Multi-stem",
     "condition": "Standing alive",
     "ageRange": "300 - 500 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "595",
@@ -3880,7 +4767,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "300 - 500 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "596",
@@ -3897,7 +4788,9 @@
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
     "evidence": "Significant habitat",
-    "coordinateStatus": "needs_site_coordinates"
+    "coordinateStatus": "needs_site_coordinates",
+    "placementConfidence": "needs_review",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "597",
@@ -3913,7 +4806,11 @@
     "form": "Multi-stem",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "598",
@@ -3929,7 +4826,11 @@
     "form": "Multi-stem",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "599",
@@ -3945,7 +4846,11 @@
     "form": "Multi-stem",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "600",
@@ -3961,7 +4866,11 @@
     "form": "Multi-stem",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "601",
@@ -3977,7 +4886,11 @@
     "form": "Multi-stem",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "602",
@@ -3993,7 +4906,11 @@
     "form": "Multi-stem",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "606",
@@ -4009,7 +4926,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "300 - 500 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "607",
@@ -4025,7 +4946,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "300 - 500 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "608",
@@ -4041,7 +4966,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "300 - 500 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "609",
@@ -4057,7 +4986,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "300 - 500 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "610",
@@ -4073,7 +5006,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "300 - 500 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "611",
@@ -4089,7 +5026,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "500 + years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "615",
@@ -4105,7 +5046,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "500 + years",
-    "evidence": "Hollowing"
+    "evidence": "Hollowing",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "617",
@@ -4121,7 +5066,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "300 - 500 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "618",
@@ -4137,7 +5086,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "300 - 500 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "620",
@@ -4153,7 +5106,11 @@
     "form": "Multi-stem",
     "condition": "Standing alive",
     "ageRange": "300 - 500 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "622",
@@ -4169,7 +5126,11 @@
     "form": "Maiden",
     "condition": "Fallen dead",
     "ageRange": "500 + years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "623",
@@ -4185,7 +5146,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "300 - 500 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "624",
@@ -4201,7 +5166,11 @@
     "form": "Coppice",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "625",
@@ -4217,7 +5186,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "628",
@@ -4233,7 +5206,11 @@
     "form": "Multi-stem",
     "condition": "Standing alive",
     "ageRange": "500 + years",
-    "evidence": "Fungi"
+    "evidence": "Fungi",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "629",
@@ -4249,7 +5226,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "500 + years",
-    "evidence": "Hollowing"
+    "evidence": "Hollowing",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "630",
@@ -4265,7 +5246,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "500 + years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "639",
@@ -4281,7 +5266,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "500 + years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "642",
@@ -4297,7 +5286,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "300 - 500 years",
-    "evidence": "Hollowing"
+    "evidence": "Hollowing",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "646",
@@ -4313,7 +5306,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "500 + years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "650",
@@ -4330,7 +5327,10 @@
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
     "evidence": "Significant habitat",
-    "coordinateStatus": "site_geocoded"
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "651",
@@ -4346,7 +5346,11 @@
     "form": "Multi-stem",
     "condition": "Standing alive",
     "ageRange": "300 - 500 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "652",
@@ -4362,7 +5366,11 @@
     "form": "Multi-stem",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "655",
@@ -4379,7 +5387,10 @@
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
     "evidence": "Significant habitat",
-    "coordinateStatus": "site_geocoded"
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "657",
@@ -4395,7 +5406,11 @@
     "form": "Multi-stem",
     "condition": "Standing alive",
     "ageRange": "300 - 500 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "658",
@@ -4411,7 +5426,11 @@
     "form": "Multi-stem",
     "condition": "Standing alive",
     "ageRange": "300 - 500 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "659",
@@ -4427,7 +5446,11 @@
     "form": "Pollard",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "660",
@@ -4443,7 +5466,11 @@
     "form": "Group",
     "condition": "Standing alive",
     "ageRange": "300 - 500 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "661",
@@ -4459,7 +5486,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "662",
@@ -4476,7 +5507,9 @@
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
     "evidence": "Holes",
-    "coordinateStatus": "needs_site_coordinates"
+    "coordinateStatus": "needs_site_coordinates",
+    "placementConfidence": "needs_review",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "664",
@@ -4492,7 +5525,11 @@
     "form": "Group",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "665",
@@ -4508,7 +5545,11 @@
     "form": "Group",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "668",
@@ -4524,7 +5565,11 @@
     "form": "Group",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "669",
@@ -4540,7 +5585,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "670",
@@ -4556,7 +5605,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
-    "evidence": "Hollowing"
+    "evidence": "Hollowing",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "672",
@@ -4572,7 +5625,11 @@
     "form": "Colony",
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "673",
@@ -4588,7 +5645,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "674",
@@ -4604,7 +5665,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "675",
@@ -4620,7 +5685,11 @@
     "form": "Maiden",
     "condition": "Fallen alive",
     "ageRange": "150 - 200 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "678",
@@ -4636,7 +5705,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "679",
@@ -4652,7 +5725,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "682",
@@ -4668,7 +5745,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "683",
@@ -4684,7 +5765,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "685",
@@ -4700,7 +5785,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "686",
@@ -4716,7 +5805,11 @@
     "form": "Multi-stem",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "687",
@@ -4732,7 +5825,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "688",
@@ -4748,7 +5845,11 @@
     "form": "",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "690",
@@ -4765,7 +5866,9 @@
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
     "evidence": "Significant habitat",
-    "coordinateStatus": "needs_site_coordinates"
+    "coordinateStatus": "needs_site_coordinates",
+    "placementConfidence": "needs_review",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "691",
@@ -4781,7 +5884,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "693",
@@ -4797,7 +5904,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "300 - 500 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "695",
@@ -4813,7 +5924,11 @@
     "form": "Group",
     "condition": "Standing alive",
     "ageRange": "300 - 500 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "696",
@@ -4829,7 +5944,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "697",
@@ -4845,7 +5964,11 @@
     "form": "Group",
     "condition": "Standing alive",
     "ageRange": "200 - 300 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "698",
@@ -4862,7 +5985,10 @@
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
     "evidence": "Significant habitat",
-    "coordinateStatus": "site_geocoded"
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "702",
@@ -4878,7 +6004,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "50 - 100 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "703",
@@ -4895,7 +6025,10 @@
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
     "evidence": "Fungi",
-    "coordinateStatus": "site_geocoded"
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "704",
@@ -4911,7 +6044,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
-    "evidence": ""
+    "evidence": "",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "705",
@@ -4927,7 +6064,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "706",
@@ -4944,7 +6085,9 @@
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
     "evidence": "Significant habitat",
-    "coordinateStatus": "needs_site_coordinates"
+    "coordinateStatus": "needs_site_coordinates",
+    "placementConfidence": "needs_review",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "707",
@@ -4961,7 +6104,9 @@
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
     "evidence": "Significant habitat",
-    "coordinateStatus": "needs_site_coordinates"
+    "coordinateStatus": "needs_site_coordinates",
+    "placementConfidence": "needs_review",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "709",
@@ -4978,7 +6123,9 @@
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
     "evidence": "Fungi",
-    "coordinateStatus": "needs_site_coordinates"
+    "coordinateStatus": "needs_site_coordinates",
+    "placementConfidence": "needs_review",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "711",
@@ -4994,7 +6141,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "713",
@@ -5011,7 +6162,9 @@
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
     "evidence": "Significant habitat",
-    "coordinateStatus": "needs_site_coordinates"
+    "coordinateStatus": "needs_site_coordinates",
+    "placementConfidence": "needs_review",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "714",
@@ -5028,7 +6181,9 @@
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
     "evidence": "Significant habitat",
-    "coordinateStatus": "needs_site_coordinates"
+    "coordinateStatus": "needs_site_coordinates",
+    "placementConfidence": "needs_review",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "715",
@@ -5045,7 +6200,9 @@
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
     "evidence": "Significant habitat",
-    "coordinateStatus": "needs_site_coordinates"
+    "coordinateStatus": "needs_site_coordinates",
+    "placementConfidence": "needs_review",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "717",
@@ -5061,7 +6218,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "718",
@@ -5078,7 +6239,9 @@
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
     "evidence": "Significant habitat",
-    "coordinateStatus": "needs_site_coordinates"
+    "coordinateStatus": "needs_site_coordinates",
+    "placementConfidence": "needs_review",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "721",
@@ -5094,7 +6257,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "723",
@@ -5111,7 +6278,9 @@
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
     "evidence": "Significant habitat",
-    "coordinateStatus": "needs_site_coordinates"
+    "coordinateStatus": "needs_site_coordinates",
+    "placementConfidence": "needs_review",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "724",
@@ -5128,7 +6297,9 @@
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
     "evidence": "Significant habitat",
-    "coordinateStatus": "needs_site_coordinates"
+    "coordinateStatus": "needs_site_coordinates",
+    "placementConfidence": "needs_review",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "725",
@@ -5145,7 +6316,9 @@
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
     "evidence": "Significant habitat",
-    "coordinateStatus": "needs_site_coordinates"
+    "coordinateStatus": "needs_site_coordinates",
+    "placementConfidence": "needs_review",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "726",
@@ -5162,7 +6335,9 @@
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
     "evidence": "Significant habitat",
-    "coordinateStatus": "needs_site_coordinates"
+    "coordinateStatus": "needs_site_coordinates",
+    "placementConfidence": "needs_review",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "727",
@@ -5178,7 +6353,11 @@
     "form": "Group",
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
-    "evidence": "Holes"
+    "evidence": "Holes",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "728",
@@ -5194,7 +6373,11 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "100 - 150 years",
-    "evidence": "Holes"
+    "evidence": "Holes",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   },
   {
     "id": "729",
@@ -5210,6 +6393,10 @@
     "form": "Maiden",
     "condition": "Standing alive",
     "ageRange": "150 - 200 years",
-    "evidence": "Significant habitat"
+    "evidence": "Significant habitat",
+    "coordinateStatus": "site_geocoded",
+    "placementConfidence": "verified",
+    "geocodeSource": "heritage_register",
+    "verifiedAt": "2026-10-23"
   }
 ]

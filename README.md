@@ -69,6 +69,18 @@ npm run data:verify-counties
 `data:verify-counties` downloads Tailte Éireann statutory county boundaries (data.gov.ie),
 compares each marker to its claimed county, and spot-checks placements with Nominatim.
 
+Refresh placement confidence fields after manual edits:
+
+```bash
+npm run data:apply-placement
+```
+
+Attempt Nominatim backfill for records missing coordinates (rate-limited):
+
+```bash
+npm run data:backfill-coords
+```
+
 The source CSV is optional and is not committed. If you have a source CSV named
 `HeritageTreesOfIreland_corrected.csv` in the project root, regenerate JSON with:
 
