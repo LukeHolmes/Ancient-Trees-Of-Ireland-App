@@ -63,7 +63,11 @@ marker clusters with:
 
 ```bash
 npm run data:audit
+npm run data:verify-counties
 ```
+
+`data:verify-counties` downloads Tailte Éireann statutory county boundaries (data.gov.ie),
+compares each marker to its claimed county, and spot-checks placements with Nominatim.
 
 The source CSV is optional and is not committed. If you have a source CSV named
 `HeritageTreesOfIreland_corrected.csv` in the project root, regenerate JSON with:
