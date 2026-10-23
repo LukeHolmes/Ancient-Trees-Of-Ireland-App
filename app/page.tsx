@@ -1,3 +1,4 @@
+import { Suspense } from 'react'
 import { promises as fs } from 'fs'
 import path from 'path'
 import type { TreeRecord } from '@/types/tree'
@@ -12,10 +13,18 @@ export default async function Home() {
   const awaitingCoordinates = countAwaitingCoordinates(records)
 
   return (
-    <MapApp
-      records={records}
-      mappableTrees={mappableTrees}
-      awaitingCoordinates={awaitingCoordinates}
-    />
+    <Suspense
+      fallback={
+        <div className="h-screen flex items-center justify-center text-parchment/60">
+          Loading map…
+        </div>
+      }
+    >
+      <MapApp
+        records={records}
+        mappableTrees={mappableTrees}
+        awaitingCoordinates={awaitingCoordinates}
+      />
+    </Suspense>
   )
 }

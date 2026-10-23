@@ -1,15 +1,23 @@
 'use client'
 
-import { useState, useCallback, useMemo } from 'react'
+import { useState, useCallback, useMemo, useEffect, useRef } from 'react'
 import dynamic from 'next/dynamic'
+import { usePathname, useRouter, useSearchParams } from 'next/navigation'
 import type { Tree, TreeRecord } from '@/types/tree'
 import type { Filters } from '@/types/filters'
-import { DEFAULT_FILTERS } from '@/types/filters'
 import { isMappableRecord } from '@/lib/trees'
+import { matchesFilters } from '@/lib/filterRecords'
+import {
+  filtersFromSearchParams,
+  searchParamsEqual,
+  searchParamsFromState,
+  selectedTreeIdFromParams,
+} from '@/lib/urlState'
 import Header from '@/components/Header'
 import StatsBar from '@/components/StatsBar'
 import FilterPanel from '@/components/FilterPanel'
 import TreeList from '@/components/TreeList'
+import TreeDetailPanel from '@/components/TreeDetailPanel'
 
 const MapView = dynamic(() => import('@/components/MapView'), { ssr: false })
 
@@ -19,21 +27,41 @@ interface MapAppProps {
   awaitingCoordinates: number
 }
 
-function matchesFilters(record: TreeRecord, filters: Filters): boolean {
-  if (filters.counties.length > 0 && !filters.counties.includes(record.county)) return false
-  if (filters.broadTypes.length > 0 && !filters.broadTypes.includes(record.broadType)) return false
-  if (filters.commonNames.length > 0 && !filters.commonNames.includes(record.commonName)) return false
-  if (filters.ageRanges.length > 0 && !filters.ageRanges.includes(record.ageRange)) return false
-  if (filters.condition && record.condition !== filters.condition) return false
-  if (filters.mappableOnly && !isMappableRecord(record)) return false
-  return true
-}
-
 export default function MapApp({ records, mappableTrees, awaitingCoordinates }: MapAppProps) {
-  const [filters, setFilters] = useState<Filters>(DEFAULT_FILTERS)
-  const [selectedId, setSelectedId] = useState<string | null>(null)
+  const router = useRouter()
+  const pathname = usePathname()
+  const searchParams = useSearchParams()
+  const hydratedFromUrl = useRef(false)
+
+  const [filters, setFilters] = useState<Filters>(() =>
+    filtersFromSearchParams(new URLSearchParams(searchParams.toString()))
+  )
+  const [selectedId, setSelectedId] = useState<string | null>(() =>
+    selectedTreeIdFromParams(new URLSearchParams(searchParams.toString()))
+  )
   const [flyTo, setFlyTo] = useState<{ lat: number; lng: number } | null>(null)
   const [sidebarOpen, setSidebarOpen] = useState(false)
+  const [linkCopied, setLinkCopied] = useState(false)
+
+  useEffect(() => {
+    if (hydratedFromUrl.current) return
+    hydratedFromUrl.current = true
+    const id = selectedTreeIdFromParams(new URLSearchParams(searchParams.toString()))
+    if (!id) return
+    const record = records.find((r) => r.id === id)
+    if (record && isMappableRecord(record)) {
+      setFlyTo({ lat: record.lat, lng: record.lng })
+    }
+  }, [records, searchParams])
+
+  useEffect(() => {
+    const params = searchParamsFromState(filters, selectedId)
+    const current = new URLSearchParams(searchParams.toString())
+    if (searchParamsEqual(params, current)) return
+    const next = params.toString()
+    const url = next ? `${pathname}?${next}` : pathname
+    router.replace(url, { scroll: false })
+  }, [filters, selectedId, pathname, router, searchParams])
 
   const filteredRecords = useMemo(
     () => records.filter((t) => matchesFilters(t, filters)),
@@ -45,12 +73,30 @@ export default function MapApp({ records, mappableTrees, awaitingCoordinates }: 
     return mappableTrees.filter((t) => ids.has(t.id))
   }, [filteredRecords, mappableTrees])
 
+  const selectedRecord = useMemo(
+    () => records.find((r) => r.id === selectedId) ?? null,
+    [records, selectedId]
+  )
+
   const handleSelectTree = useCallback((tree: TreeRecord) => {
     setSelectedId(tree.id)
     if (isMappableRecord(tree)) {
       setFlyTo({ lat: tree.lat, lng: tree.lng })
     }
   }, [])
+
+  const handleCopyLink = useCallback(async () => {
+    if (!selectedId) return
+    const params = searchParamsFromState(filters, selectedId)
+    const url = `${window.location.origin}${pathname}?${params.toString()}`
+    try {
+      await navigator.clipboard.writeText(url)
+      setLinkCopied(true)
+      window.setTimeout(() => setLinkCopied(false), 2000)
+    } catch {
+      /* clipboard unavailable */
+    }
+  }, [filters, pathname, selectedId])
 
   return (
     <div className="flex h-screen overflow-hidden" style={{ background: '#0F2318' }}>
@@ -85,6 +131,14 @@ export default function MapApp({ records, mappableTrees, awaitingCoordinates }: 
           <div className="px-4 pt-4 flex-shrink-0">
             <FilterPanel records={records} filters={filters} onChange={setFilters} />
           </div>
+          <TreeDetailPanel
+            record={selectedRecord}
+            onClose={() => setSelectedId(null)}
+            onCopyLink={handleCopyLink}
+          />
+          {linkCopied && (
+            <p className="text-[10px] text-center text-amber px-4 -mt-1 mb-1">Link copied</p>
+          )}
           <div
             className="mx-4 my-3 flex-shrink-0"
             style={{ height: '1px', background: 'rgba(196, 148, 58, 0.15)' }}

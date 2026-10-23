@@ -25,3 +25,9 @@ jobs:
 
       - name: Coordinate audit (Tailte boundaries)
         run: npm run data:audit
+
+      - name: Install Playwright browser
+        run: npx playwright install chromium --with-deps
+
+      - name: E2E smoke tests
+        run: npm run test:e2e

@@ -172,28 +172,21 @@ export default function MapView({
                   <div style={{ fontSize: '0.8rem', color: '#b8cfb8', marginBottom: 2 }}>
                     County: {tree.county}
                   </div>
-                  {tree.ageRange && (
-                    <div style={{ fontSize: '0.8rem', color: '#b8cfb8', marginBottom: 2 }}>
-                      Age: {tree.ageRange}
-                    </div>
-                  )}
-                  {tree.condition && (
-                    <div style={{ fontSize: '0.8rem', color: '#b8cfb8', marginBottom: 2 }}>
-                      Condition: {tree.condition}
-                    </div>
-                  )}
-                  {placementNote && (
-                    <div
-                      style={{
-                        fontSize: '0.75rem',
-                        color: '#C4943A',
-                        marginTop: 8,
-                        lineHeight: 1.35,
-                      }}
-                    >
-                      {placementNote}
-                    </div>
-                  )}
+                {placementNote && (
+                  <div
+                    style={{
+                      fontSize: '0.75rem',
+                      color: '#C4943A',
+                      marginTop: 8,
+                      lineHeight: 1.35,
+                    }}
+                  >
+                    {placementNote}
+                  </div>
+                )}
+                <div style={{ fontSize: '0.7rem', color: '#b8cfb8', marginTop: 8, opacity: 0.85 }}>
+                  Open the sidebar for full heritage details.
+                </div>
                 </div>
               </Popup>
             </CircleMarker>

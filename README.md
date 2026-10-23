@@ -43,6 +43,16 @@ npm run build
 npm run start
 ```
 
+### Vercel
+
+Set `NEXT_PUBLIC_CARTO_API_KEY` in the project environment (Production + Preview) for the dark CARTO basemap. See [AGENTS.md](./AGENTS.md).
+
+## Features
+
+- Text search (`q` URL param), shareable links (`?tree=1&county=Mayo`), tree detail panel
+- Virtualised results list (full dataset)
+- Playwright smoke tests: `npm run test:e2e`
+
 ## Checks
 
 ```bash
