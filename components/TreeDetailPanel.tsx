@@ -21,7 +21,25 @@ function DetailRow({ label, value }: { label: string; value: string | undefined 
 }
 
 export default function TreeDetailPanel({ record, onClose, onCopyLink }: TreeDetailPanelProps) {
-  if (!record) return null
+  if (!record) {
+    return (
+      <div
+        className="mx-4 mb-3 flex-shrink-0 rounded-lg overflow-hidden"
+        style={{
+          background: 'rgba(28, 74, 42, 0.35)',
+          border: '1px solid rgba(196, 148, 58, 0.18)',
+        }}
+      >
+        <div className="px-4 py-4">
+          <p className="text-[10px] uppercase tracking-[0.18em] text-amber/80">Selected tree</p>
+          <p className="mt-2 text-sm text-parchment/75 leading-relaxed">
+            Choose a tree from the list or tap a map marker to open its heritage notes, location,
+            and a shareable link.
+          </p>
+        </div>
+      </div>
+    )
+  }
 
   const mappable = isMappableRecord(record)
 
@@ -51,8 +69,9 @@ export default function TreeDetailPanel({ record, onClose, onCopyLink }: TreeDet
         <button
           type="button"
           onClick={onClose}
-          className="text-parchment/50 hover:text-parchment text-lg leading-none px-1"
+          className="text-parchment/50 hover:text-parchment text-lg leading-none h-9 w-9 inline-flex items-center justify-center rounded-full"
           aria-label="Close details"
+          style={{ background: 'rgba(15, 35, 24, 0.38)' }}
         >
           ×
         </button>
@@ -83,14 +102,14 @@ export default function TreeDetailPanel({ record, onClose, onCopyLink }: TreeDet
         <button
           type="button"
           onClick={onCopyLink}
-          className="text-[10px] px-2 py-1.5 rounded flex-1"
+          className="text-[10px] px-2 py-2 rounded flex-1 font-semibold"
           style={{
             color: '#C4943A',
             border: '1px solid rgba(196, 148, 58, 0.4)',
             background: 'rgba(196, 148, 58, 0.08)',
           }}
         >
-          Copy link to this tree
+          Copy shareable tree link
         </button>
       </div>
     </div>

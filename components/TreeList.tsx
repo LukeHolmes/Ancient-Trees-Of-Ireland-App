@@ -10,11 +10,19 @@ interface TreeListProps {
   records: TreeRecord[]
   selectedId: string | null
   onSelect: (tree: TreeRecord) => void
+  hasActiveFilters: boolean
+  onClearFilters: () => void
 }
 
-const ROW_HEIGHT = 92
+const ROW_HEIGHT = 100
 
-export default function TreeList({ records, selectedId, onSelect }: TreeListProps) {
+export default function TreeList({
+  records,
+  selectedId,
+  onSelect,
+  hasActiveFilters,
+  onClearFilters,
+}: TreeListProps) {
   const parentRef = useRef<HTMLDivElement>(null)
 
   const virtualizer = useVirtualizer({
@@ -43,8 +51,21 @@ export default function TreeList({ records, selectedId, onSelect }: TreeListProp
         {records.length === 0 ? (
           <div className="flex flex-col items-center justify-center h-full py-12 text-center px-6">
             <div className="text-4xl mb-3 opacity-40">Tree</div>
-            <p className="text-sm text-parchment/40">No trees match your filters.</p>
-            <p className="text-xs text-parchment/30 mt-1">Try clearing some filters.</p>
+            <p className="text-sm text-parchment/50">No trees match this search and filter combination.</p>
+            <p className="text-xs text-parchment/30 mt-1">Try clearing a few filters or broadening the search.</p>
+            {hasActiveFilters && (
+              <button
+                type="button"
+                onClick={onClearFilters}
+                className="mt-4 rounded-full px-3 py-2 text-xs font-semibold text-amber"
+                style={{
+                  border: '1px solid rgba(196, 148, 58, 0.4)',
+                  background: 'rgba(196, 148, 58, 0.08)',
+                }}
+              >
+                Clear filters
+              </button>
+            )}
           </div>
         ) : (
           <div
@@ -63,7 +84,8 @@ export default function TreeList({ records, selectedId, onSelect }: TreeListProp
                   type="button"
                   disabled={!mappable}
                   onClick={() => onSelect(tree)}
-                  className="absolute left-0 w-full text-left px-4 py-3 transition-all duration-150 disabled:opacity-70"
+                  aria-pressed={selectedId === tree.id}
+                  className="absolute left-0 w-full text-left px-4 py-4 transition-all duration-150 disabled:opacity-70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber/70 focus-visible:ring-inset"
                   style={{
                     top: 0,
                     height: `${virtualRow.size}px`,

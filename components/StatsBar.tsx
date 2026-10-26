@@ -21,6 +21,10 @@ export default function StatsBar({
 
   return (
     <div className="flex-shrink-0" style={{ borderBottom: '1px solid rgba(196, 148, 58, 0.2)' }}>
+      <p className="sr-only" role="status" aria-live="polite">
+        {filteredCount} trees match the current search and filters. {filteredMappableCount} appear
+        on the map.
+      </p>
       <div
         className="grid grid-cols-3"
         style={{ background: 'rgba(28, 74, 42, 0.4)' }}
