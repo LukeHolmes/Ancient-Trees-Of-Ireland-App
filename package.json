@@ -15,7 +15,8 @@
     "data:backfill-coords": "node scripts/backfill_missing_coordinates.mjs",
     "typecheck": "tsc --noEmit",
     "test:e2e": "playwright test",
-    "data:simplify-counties": "node scripts/simplify_counties_geojson.mjs"
+    "data:simplify-counties": "node scripts/simplify_counties_geojson.mjs",
+    "data:merge-grok": "node scripts/merge_grok_heritage_import.mjs"
   },
   "dependencies": {
     "@tanstack/react-virtual": "^3.13.12",

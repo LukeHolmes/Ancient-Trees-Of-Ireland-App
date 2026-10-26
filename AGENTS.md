@@ -30,6 +30,7 @@ Source of truth: `public/data/trees.json` (optional CSV → JSON via `npm run da
 | `npm run data:audit` | Fail if blocking county mismatches or bad clusters |
 | `npm run data:verify-counties` | Deep Tailte + Nominatim sample report |
 | `npm run data:simplify-counties` | Shrink `public/data/counties-roi.geojson` for map outlines |
+| `npm run data:merge-grok` | Apply `data/import/heritage_*` Grok CSVs (coord fixes + new register rows) |
 
 ### When new coordinates arrive (CSV, Grokbot, manual)
 
