@@ -132,14 +132,14 @@ export default function MapApp({ records, mappableTrees, awaitingCoordinates }: 
 
       {sidebarOpen && (
         <div
-          className="fixed inset-0 bg-black/60 z-20 lg:hidden"
+          className="fixed inset-0 bg-black/60 z-[1300] lg:z-20 lg:hidden"
           onClick={() => setSidebarOpen(false)}
         />
       )}
 
       <aside
         className={`
-          fixed lg:relative inset-y-0 left-0 z-30 lg:z-auto
+          fixed lg:relative inset-y-0 left-0 z-[1400] lg:z-auto
           w-full max-w-[380px] lg:max-w-none lg:w-[380px] flex flex-col h-full
           transition-transform duration-300 ease-in-out
           ${sidebarOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}
