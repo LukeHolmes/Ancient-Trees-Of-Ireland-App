@@ -27,6 +27,10 @@ export default function Header({ totalCount }: HeaderProps) {
           <p className="text-xs text-parchment/60 mt-2 leading-relaxed">
             Discover Ireland&apos;s living heritage - trees of extraordinary age and significance
           </p>
+          <p className="text-[11px] text-parchment/55 mt-2 leading-relaxed">
+            Data note: this visitor guide is built from the 2009 Tree Council of Ireland heritage
+            tree survey.
+          </p>
           <p className="text-[11px] text-parchment/55 mt-3 leading-relaxed">
             Website &amp; contact:{' '}
             <a

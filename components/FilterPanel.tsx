@@ -47,13 +47,13 @@ function MultiCheckList({
       {options.map((opt) => (
         <label
           key={opt}
-          className="flex items-center gap-2 px-3 py-1.5 cursor-pointer hover:bg-green-primary/40 transition-colors"
+          className="flex items-center gap-3 px-3 py-2 cursor-pointer hover:bg-green-primary/40 transition-colors"
         >
           <input
             type="checkbox"
             checked={selected.includes(opt)}
             onChange={() => onToggle(opt)}
-            className="accent-amber w-3 h-3 flex-shrink-0"
+            className="accent-amber w-4 h-4 flex-shrink-0"
           />
           <span className="text-xs text-parchment/80 truncate">{opt}</span>
         </label>
@@ -138,18 +138,39 @@ export default function FilterPanel({ records, filters, onChange }: FilterPanelP
       </div>
 
       <Section title="Search">
-        <input
-          type="search"
-          value={filters.searchQuery}
-          onChange={(e) => onChange({ ...filters, searchQuery: e.target.value })}
-          placeholder="Site, species, or taxon…"
-          className="w-full rounded px-3 py-2 text-xs outline-none"
-          style={{
-            background: 'rgba(15, 35, 24, 0.6)',
-            border: '1px solid rgba(74, 124, 89, 0.3)',
-            color: '#F5F0E8',
-          }}
-        />
+        <label htmlFor="tree-search" className="sr-only">
+          Search trees by tree name, site, county, or species
+        </label>
+        <div className="relative">
+          <input
+            id="tree-search"
+            type="search"
+            value={filters.searchQuery}
+            onChange={(e) => onChange({ ...filters, searchQuery: e.target.value })}
+            placeholder="Tree name, site, county, or species…"
+            aria-describedby="tree-search-hint"
+            className="w-full rounded px-3 py-2.5 pr-10 text-xs outline-none"
+            style={{
+              background: 'rgba(15, 35, 24, 0.6)',
+              border: '1px solid rgba(74, 124, 89, 0.3)',
+              color: '#F5F0E8',
+            }}
+          />
+          {filters.searchQuery && (
+            <button
+              type="button"
+              onClick={() => onChange({ ...filters, searchQuery: '' })}
+              className="absolute inset-y-0 right-2 my-auto h-7 w-7 rounded-full text-sm"
+              aria-label="Clear search"
+              style={{ color: '#C4943A', background: 'rgba(196, 148, 58, 0.08)' }}
+            >
+              ×
+            </button>
+          )}
+        </div>
+        <p id="tree-search-hint" className="mt-2 text-[11px] leading-relaxed text-parchment/45">
+          Search across common names, scientific names, site names, counties, and tree types.
+        </p>
       </Section>
 
       <Section title="Display">
@@ -189,7 +210,7 @@ export default function FilterPanel({ records, filters, onChange }: FilterPanelP
         />
       </Section>
 
-      <Section title="Common Name">
+      <Section title="Species / Common Name">
         <MultiCheckList
           options={allCommonNames}
           selected={filters.commonNames}

@@ -133,7 +133,7 @@ export default function MapView({
             <CircleMarker
               key={tree.id}
               center={[tree.lat, tree.lng]}
-              radius={isSelected ? 10 : 6}
+              radius={isSelected ? 11 : 7}
               pathOptions={{
                 fillColor: color,
                 fillOpacity: isSelected ? 1 : 0.82,
@@ -185,7 +185,7 @@ export default function MapView({
                   </div>
                 )}
                 <div style={{ fontSize: '0.7rem', color: '#b8cfb8', marginTop: 8, opacity: 0.85 }}>
-                  Open the sidebar for full heritage details.
+                  Open the tree browser for full heritage details and a shareable link.
                 </div>
                 </div>
               </Popup>
