@@ -175,9 +175,6 @@ export default function MapApp({ records, mappableTrees, awaitingCoordinates }: 
               Close
             </button>
           </div>
-          <div id="visitor-filters" className="px-4 pt-2 lg:pt-4 flex-shrink-0">
-            <FilterPanel records={records} filters={filters} onChange={setFilters} />
-          </div>
           <TreeDetailPanel
             record={selectedRecord}
             onClose={() => setSelectedId(null)}
@@ -192,6 +189,9 @@ export default function MapApp({ records, mappableTrees, awaitingCoordinates }: 
               Link copied
             </p>
           )}
+          <div id="visitor-filters" className="px-4 pt-2 lg:pt-1 flex-shrink-0">
+            <FilterPanel records={records} filters={filters} onChange={setFilters} />
+          </div>
           <div
             className="mx-4 my-3 flex-shrink-0"
             style={{ height: '1px', background: 'rgba(196, 148, 58, 0.15)' }}
