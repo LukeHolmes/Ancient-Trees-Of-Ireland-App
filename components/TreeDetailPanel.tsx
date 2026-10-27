@@ -66,15 +66,29 @@ export default function TreeDetailPanel({ record, onClose, onCopyLink }: TreeDet
             <div className="text-[11px] italic text-amber/90 mt-0.5">{record.taxonName}</div>
           )}
         </div>
-        <button
-          type="button"
-          onClick={onClose}
-          className="text-parchment/50 hover:text-parchment text-lg leading-none h-9 w-9 inline-flex items-center justify-center rounded-full"
-          aria-label="Close details"
-          style={{ background: 'rgba(15, 35, 24, 0.38)' }}
-        >
-          ×
-        </button>
+        <div className="flex items-center gap-2">
+          <button
+            type="button"
+            onClick={onCopyLink}
+            className="text-[10px] px-2.5 py-2 rounded font-semibold whitespace-nowrap"
+            style={{
+              color: '#C4943A',
+              border: '1px solid rgba(196, 148, 58, 0.4)',
+              background: 'rgba(196, 148, 58, 0.08)',
+            }}
+          >
+            Copy link
+          </button>
+          <button
+            type="button"
+            onClick={onClose}
+            className="text-parchment/50 hover:text-parchment text-lg leading-none h-9 w-9 inline-flex items-center justify-center rounded-full"
+            aria-label="Close details"
+            style={{ background: 'rgba(15, 35, 24, 0.38)' }}
+          >
+            ×
+          </button>
+        </div>
       </div>
 
       <div className="px-3 py-2 max-h-[220px] overflow-y-auto">
@@ -98,20 +112,6 @@ export default function TreeDetailPanel({ record, onClose, onCopyLink }: TreeDet
         )}
       </div>
 
-      <div className="px-3 py-2 flex gap-2" style={{ borderTop: '1px solid rgba(196, 148, 58, 0.15)' }}>
-        <button
-          type="button"
-          onClick={onCopyLink}
-          className="text-[10px] px-2 py-2 rounded flex-1 font-semibold"
-          style={{
-            color: '#C4943A',
-            border: '1px solid rgba(196, 148, 58, 0.4)',
-            background: 'rgba(196, 148, 58, 0.08)',
-          }}
-        >
-          Copy shareable tree link
-        </button>
-      </div>
     </div>
   )
 }
