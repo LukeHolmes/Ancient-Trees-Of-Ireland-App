@@ -1,0 +1,17 @@
+---
+description: Ancient Trees provenance, mapping integrity and responsible agent-driven data updates
+alwaysApply: true
+globs: ""
+---
+
+# Ancient Trees of Ireland — Cursor guardrails
+
+Read AGENTS.md and current data pipeline documentation before changing the map or source data. Canonical records are in public/data/trees.json; scripts and validation requirements are listed in AGENTS.md.
+
+- Treat public register, FOI/AIE, heritage and land-boundary records as evidence, not automatically verified facts. Preserve provenance, source URL/document reference, date, confidence and any uncertainty in coordinate placement.
+- Do not fabricate tree coordinates, protected status or council responses. Prefer verified site-level pins over county/town centroids; flag uncertain records instead of upgrading confidence without evidence.
+- For imported data, keep raw source separate from normalized fields, record transformations and detect duplicates/contradictions. Avoid overwriting manually verified records without a reviewed reconciliation.
+- Use existing scripts, including npm run data:apply-placement and npm run data:audit when coordinates change; choose lint, typecheck, build and Playwright checks based on the work. Do not claim a check passed unless executed.
+- Avoid network geocoding loops that violate Nominatim rate limits; use cached/reproducible outputs and deterministic validation where possible.
+- Never publish private FOI contacts or personally identifying data extracted from responses without authorization.
+- Create PRs with data-change counts, source evidence, validation results and unresolved clusters. No production deploy, merge or bulk overwrite without explicit approval.
